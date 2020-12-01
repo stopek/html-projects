@@ -1,0 +1,238 @@
+body {
+    background: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Myriad;
+    src: url('Myriad.otf');
+}
+
+#page {
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+    width: 839px;
+    background: url(img/bg.gif);
+}
+
+#top {
+    background: url(img/top.jpg);
+    width: 839px;
+    height: 178px;
+}
+
+#logoType {
+    position: absolute;
+    width: 353px;
+    height: 46px;
+    margin: 110px 720px;
+}
+
+#logoType a {
+    padding: 0px 177px 27px;
+}
+
+#menu {
+    height: 35px;
+    background: url(img/line.gif) repeat-x left 34px;
+    text-align: center;
+}
+
+#menu ul {
+    margin: auto;
+    margin-top: 5px;
+    display: inline-table;
+    padding: 0px;
+    list-style: none;
+    float: left;
+    height: 28px;
+}
+
+#menu ul li {
+    float: left;
+    width: auto;
+    padding: 0px 10px 0px 30px;
+    font-family: Myriad;
+    color: #1f1f1f;
+    font-size: 17px;
+    margin: 0px 5px 0px 40px;
+    background: url(img/menuPause.gif) no-repeat;
+    height: 28px;
+}
+
+#menu ul li span {
+    color: #52a501;
+
+}
+
+#menu ul li.noBg {
+    background: none;
+}
+
+#boxContent {
+    width: 818px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#boxContent ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background: #e5e5e5;
+}
+
+#boxContent ul li.header {
+    height: 4px;
+    background: url(img/boxBgHeader.gif);
+}
+
+#boxContent ul li.foo {
+    height: 4px;
+    background: url(img/boxBgFooter.gif);
+}
+
+#boxContent ul li.boxContent {
+    display: table;
+    margin: auto;
+}
+
+#boxContent ul li.boxContent div {
+    margin: 3px 3px;
+    float: left;
+    background: red;
+}
+
+#boxContent ul li ul li.miniBoxHeader {
+    width: 264px;
+    height: 42px;
+    background: url(img/boxHeader.gif);
+    text-align: center;
+    padding-top: 26px;
+}
+
+#boxContent ul li ul li.miniBoxHeader h1 {
+    font-family: Myriad;
+    color: #deeffb;
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0px;
+}
+
+#boxContent ul li ul li.miniBoxContent {
+    width: 264px;
+    height: 161px;
+    background: url(img/boxBg.gif);
+    text-align: center;
+    padding-top: 6px;
+}
+
+#boxContent ul li ul li.miniBoxContent.transport a {
+    background: url(img/1.png);
+    padding: 0px 44px 141px 175px;
+}
+
+#boxContent ul li ul li.miniBoxContent.parts a {
+    background: url(img/3.png);
+    padding: 0px 44px 141px 175px;
+}
+
+#boxContent ul li ul li.miniBoxContent.sales a {
+    background: url(img/2.png);
+    padding: 0px 44px 141px 175px;
+}
+
+#boxContent ul li ul li.miniBoxContent a:hover {
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+#boxContent ul li ul li.miniBoxFooter {
+    width: 264px;
+    height: 43px;
+    background: url(img/boxFoo.gif);
+    text-align: center;
+    padding-top: 3px;
+}
+
+#boxContent ul li ul li.miniBoxFooter a.goToAddress {
+    background: url(img/showMoreButton.gif) center;
+    padding: 0px 238px 16px 0px;
+}
+
+#boxContent ul li ul li.miniBoxFooter a.showInfo {
+    background: url(img/showMoreInfo.gif);
+    padding: 0px 36px 19px 0px;
+    position: absolute;
+    margin: 7px 0 0 -5px;
+}
+
+#boxContent ul li ul li.miniBoxFooter a.showInfo.active {
+    background: url(img/showMoreInfoActive.gif);
+}
+
+#boxContent ul li ul li.miniBoxMoreInfo {
+    height: 138px;
+    background: url(img/boxMoreInfo.gif);
+    display: none;
+    width: 264px;
+}
+
+#boxContent ul li ul li.miniBoxMoreInfo p {
+    margin: 0px;
+    padding: 0px;
+    padding: 5px;
+    font-family: verdana;
+    color: #4a4c4d;
+    font-size: 10px;
+    text-align: justify;
+}
+
+#boxContent ul li ul li.miniBoxMoreInfo p strong {
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+
+#footer {
+    background: url(img/footer.gif) no-repeat left 20px;
+    text-align: right;
+    height: 30px;
+}
+
+#footer h1 {
+    font-weight: normal;
+    line-height: normal;
+    margin: 6px 0 0 20px;
+    font-size: 10px;
+    font-family: verdana;
+    color: #bebebe;
+    margin-right: 10px;
+}
+
+#footer h1 a {
+    color: #898888;
+    text-decoration: none;
+}
+
+#footer h1 a:hover {
+    color: #addb09;
+}
+
+
+input, div, img, a {
+    outline: 0;
+}
+
+img {
+    border: 0px;
+}
+	

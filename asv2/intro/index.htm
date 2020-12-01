@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pl" xml:lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sprowadzane auta, części do samochodów, Felgi, Opony, przewóz osób :: Krzysztof Tracz :: Sierpc</title>
+    <meta content="text/html; charset=iso-8859-2" http-equiv="content-type"/>
+    <meta content="" name="Description"/>
+    <meta content="" name="Keywords"/>
+    <meta content="Paweł Stopczyński" name="Author"/>
+    <meta content="index, follow" name="Robots"/>
+    <meta content="index, follow" name="Googlebot"/>
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".miniBoxFooter a.showInfo").click(function () {
+
+          var idname = $(this).attr("id");
+          $(".miniBoxMoreInfo:visible").slideUp("slow");
+          $(".miniBoxFooter a.showInfo.active").removeClass("active");
+
+          $(".miniBoxMoreInfo." + idname).slideToggle("slow");
+          $(this).toggleClass("active");
+
+          return false;
+        });
+      });
+
+
+    </script>
+</head>
+<body>
+<div id="page">
+    <div id="top">
+        <div id="logoType"><a href="#"></a></div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li class="noBg">Kontakt</li>
+            <li>Telefon: <span>345345345</span></li>
+            <li>GG: <span>345345</span></li>
+            <li>Mail: <span>mail@gmail.com</span></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="boxContent">
+            <ul>
+                <li class="header"></li>
+                <li class="boxContent">
+                    <div>
+                        <ul>
+                            <li class="miniBoxHeader"><h1>Transport Osób</h1></li>
+                            <li class="miniBoxContent transport"><a href="#"></a></li>
+                            <li class="miniBoxFooter"><a class="showInfo" href="#" id="m1"></a><a class="goToAddress"
+                                                                                                  href="#"></a>
+                            </li>
+                            <li class="miniBoxMoreInfo m1">
+                                <p><strong>Informacje Ogólne</strong>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Etiam tellus magna, rutrum scelerisque aliquet vel, tempus quis augue.
+                                    Sed eget fringilla nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Etiam tellus magna, rutrum scelerisque aliquet vel, tempus quis augue.
+                                    Sed eget fringilla nunc.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="miniBoxHeader"><h1>Sprzedaż Aut</h1></li>
+                            <li class="miniBoxContent sales"><a href="#"></a></li>
+                            <li class="miniBoxFooter"><a class="showInfo" href="#" id="m2"></a><a class="goToAddress"
+                                                                                                  href="#"></a>
+                            </li>
+                            <li class="miniBoxMoreInfo m2">
+                                <p><strong>Informacje Ogólne</strong>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Etiam tellus magna, rutrum scelerisque aliquet vel, tempus quis augue.
+                                    Sed eget fringilla nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Etiam tellus magna, rutrum scelerisque aliquet vel, tempus quis augue.
+                                    Sed eget fringilla nunc.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="miniBoxHeader"><h1>Sprzedaż Częsci</h1></li>
+                            <li class="miniBoxContent parts"><a href="#"></a></li>
+                            <li class="miniBoxFooter"><a class="showInfo" href="#" id="m3"></a><a class="goToAddress"
+                                                                                                  href="#"></a>
+                            </li>
+                            <li class="miniBoxMoreInfo m3">
+                                <p><strong>Informacje Ogólne</strong>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Etiam tellus magna, rutrum scelerisque aliquet vel, tempus quis augue.
+                                    Sed eget fringilla nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Etiam tellus magna, rutrum scelerisque aliquet vel, tempus quis augue.
+                                    Sed eget fringilla nunc.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="foo"></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer"><h1>Copyright (c) 2010, <a href="#">Stopek</a>, All rights reserved!</h1></div>
+</div>
+</body>
+</html>
+
+
+
+
+

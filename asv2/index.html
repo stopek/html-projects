@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Auto-Salon</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-2"/>
+    <meta name="Description" content=""/>
+    <meta name="Keywords" content=""/>
+    <meta name="Author" content="Pawel Stopczynski"/>
+    <meta name="Robots" content="index, follow"/>
+    <meta name="Googlebot" content="index, follow"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="all"/>
+
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+    <link type="text/css" rel="stylesheet" media="screen" href="index.css"/>
+
+    <link rel="stylesheet" href="css/jquery.tabs.css" type="text/css" media="print, projection, screen"/>
+    <!-- Additional IE/Win specific style sheet (Conditional Comments) -->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/jquery.tabs-ie.css" type="text/css" media="projection, screen"/>
+    <![endif]-->
+
+    <script src="js/tabs/jquery-1.1.3.1.pack.js" type="text/javascript"></script>
+    <script src="js/tabs/jquery.history_remote.pack.js" type="text/javascript"></script>
+    <script src="js/tabs/jquery.tabs.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var $j = jQuery.noConflict();
+      $j(function () {
+        $j('.jquery_menu').tabs({ fxSlide: true, fxFade: true, fxSpeed: 'normal' });
+      });
+    </script>
+</head>
+<body>
+	<div id="page">
+    <div id="header">
+        <div id="login_panel">
+            <form method="post" action="">
+                <div class="login_submit"><input type="image" src="img/submit_login.gif"/></div>
+                <div class="keys"></div>
+                <div class="itt"><input type="text" class="button_text-v1"/><span> Login </span></div>
+                <div class="itt"><input type="password" class="button_text-v1"/><span> Haslo </span></div>
+            </form>
+        </div>
+        <div id="reklama_panel">
+            <ul>
+                <li class="fon"><span>+48 504 434 045</span></li>
+                <li class="mail"><span>tracz50@wp.pl</span></li>
+                <li class="gg"><span>8986078</span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top">
+        <ul id="top_other_menu">
+            <li class="search">
+                <form method="post" action="">
+                    <div class="search_text"><input type="text" name="search_text" value="wpisz szukana fraze"
+                                                    onclick="return this.form.search_text.value = '';"/></div>
+                    <div class="search_submit"><input type="image" src="img/search_submit.gif"/></div>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <ul id="menu">
+        <li class="m_left"></li>
+        <li><a href="#">Strona Glowna</a></li>
+        <li><a href="#">Moje Aukcje</a></li>
+        <li><a href="#">Archiwum</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Ksiega Gosci</a></li>
+        <li><a href="#">Zamowienia</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Redakcja</a></li>
+        <li><a href="#">Reklama</a></li>
+        <li class="m_right"></li>
+    </ul>
+    <div id="site">
+        <div id="left">
+            <!-- block menu -->
+            <ul id="block_menu">
+                <li class="block_menu_naglowek"><span>.Menu Glowne</span></li>
+                <li>
+                    <ul class="block_menu_ul">
+                        <li><a href="#">Strona Glowna</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Ksiega Gosci</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Redakcja</a></li>
+                        <li><a href="#">Reklama</a></li>
+                        <li><a href="#">Aktualne Aukcje</a></li>
+                        <li><a href="#">Logowanie</a></li>
+                        <li><a href="#">Rejestracja</a></li>
+                        <li><a href="#">Nasi Partnerzy</a></li>
+                        <li><a href="#">Aukcje</a></li>
+                    </ul>
+                    <div id="subscribe">
+                        <form method="post" action="">
+                            <div class="subscribe_text"><input type="text" name="sub_mail" value="twoj adres mail"
+                                                               onclick="return this.form.sub_mail.value = '';"/></div>
+                            <div class="subscribe_submit"><input type="image" src="img/ok.png"/></div>
+                        </form>
+                        <div id="subscribe_description"><span>Chcesz otrzymywać informacje o nowosciach na naszej stronie?</span>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="block_menu_zakonczenie"></li>
+            </ul>
+
+            <!-- block statystyki -->
+            <ul id="block_statystyki">
+                <li class="block_statystyki_naglowek"><span>.Statystyki</span></li>
+                <li>
+                    <ul>
+
+                        <li class="online_title"><span>Lacznie na stronie</span></li>
+                        <li class="online_result"><span>126</span></li>
+                        <li class="online_title"><span>Zalogowanych uzytkownikow</span></li>
+                        <li class="online_result"><span>34</span></li>
+                        <li class="online_title"><span>Lacznie odwiedzin</span></li>
+                        <li class="online_result"><span>1 266 443</span></li>
+
+                    </ul>
+                </li>
+                <li class="block_statystyki_zakonczenie"></li>
+            </ul>
+        </div>
+
+        <!-- block news -->
+        <ul id="block_news">
+            <li class="block_news_naglowek"><span>.Ostatnie newsy</span></li>
+            <li class="jquery_menu">
+                <ul class="yyy">
+                    <li><a href="#area-1"><span>Aktualne</span></a></li>
+                    <li><a href="#area-2"><span>Archiwum</span></a></li>
+                </ul>
+                <div id="area-1" class="srodek_zakladki">
+                    <ul class="buttons_bn">
+                        <li class="back_button" onclick="javascript:document.location.href='#'"></li>
+                        <li class="next_button" onclick="javascript:document.location.href='#'"
+                            style="margin-left:796px;"></li>
+                    </ul>
+                    <ul class="news">
+                        <li class="news_title"><span class="t">Nowosci na naszsej stronie</span><span class="d">autor: Stopek / dodano: 21 maja 2010r. </span>
+                        </li>
+                        <li class="news_text">
+									<span>
+										<img src="img/ikona_newsa.jpg" alt=""/>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate porttitor ornare. Pellentesque malesuada bibendum nibh, ut feugiat enim ornare sed. Sed ultrices enim vitae risus faucibus vitae elementum quam pulvinar. Suspendisse blandit felis nec leo sodales porttitor pulvinar ligula adipiscing. Phasellus mauris metus, egestas in hendrerit sit amet, viverra nec felis. Mauris bibendum malesuada ipsum. Vivamus tellus diam, venenatis vitae blandit nec, interdum nec turpis. Donec elementum aliquam magna vitae lobortis. Sed lobortis suscipit diam, sed elementum nibh rhoncus non. Fusce accumsan venenatis augue eget porta. Pellentesque massa tortor, molestie eu mattis ut, egestas id lectus. Donec tincidunt urna ligula, ut auctor nisl.
+
+Pellentesque sit amet ultrices sem. Vivamus dictum gravida enim eget aliquet. Aliquam facilisis consectetur porttitor. Phasellus ut nibh orci. Sed pulvinar ligula ipsum. Nam suscipit purus at ligula ornare volutpat. Phasellus vitae arcu at dui euismod facilisis sed non nisl. Aliquam in leo leo. Proin sed neque nunc, et tincidunt neque. Ut eu suscipit odio. Aenean fermentum sollicitudin est id feugiat. Nulla blandit nunc ac leo imperdiet lobortis. Pellentesque lectus elit, semper id interdum in, elementum sit amet purus. Vivamus laoreet laoreet eros.</span>
+                        </li>
+                        <li class="news_option1"><span><img src="img/news_ikona_3.gif" alt=""/><a
+                                href="#">Udostepnij</a></span></li>
+                        <li class="news_option2"><span><img src="img/news_ikona_2.gif" alt=""/><a
+                                href="#">Czytaj Wiecej</a></span></li>
+                        <li class="news_option3"><span><img src="img/news_ikona_1.gif" alt=""/><a
+                                href="#">Komentuj(10)</a></span></li>
+                    </ul>
+
+                </div>
+                <div id="area-2" class="srodek_zakladki">
+                    <ul class="news">
+                        <li class="news_title"><span class="t">Nowosci na naszsej stronie</span><span class="d">autor: Stopek / dodano: 21 maja 2010r. </span>
+                        </li>
+                        <li class="news_text">
+									<span>
+										<img src="img/ikona_newsa.jpg" alt=""/>
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+										Tresc kolejnego newsa jest nastepujaca i oczywista Tresc kolejnego newsa jest nastepujaca i oczywista 
+									</span>
+                        </li>
+                        <li class="news_option1"><span><img src="img/news_ikona_3.gif" alt=""/><a
+                                href="#">Udostepnij</a></span></li>
+                        <li class="news_option2"><span><img src="img/news_ikona_2.gif" alt=""/><a
+                                href="#">Czytaj Wiecej</a></span></li>
+                        <li class="news_option3"><span><img src="img/news_ikona_1.gif" alt=""/><a
+                                href="#">Komentuj(22)</a></span></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="block_news_zakonczenie"></li>
+        </ul>
+
+        <!-- block partnerzy -->
+        <ul id="block_partnerzy">
+            <li class="block_partnerzy_naglowek"><span>.Nasi Partnerzy</span></li>
+            <li>
+                <img src="img/button.gif" alt=""/>
+                <img src="img/button.gif" alt=""/>
+                <img src="img/button.gif" alt=""/>
+                <img src="img/button.gif" alt=""/>
+                <img src="img/button.gif" alt=""/>
+                <img src="img/button.gif" alt=""/>
+            </li>
+            <li class="block_partnerzy_zakonczenie"></li>
+        </ul>
+
+        <!-- block galeria -->
+        <ul id="block_galeria">
+            <li class="block_galeria_naglowek">.Galeria Aut</li>
+            <li class="jquery_menu">
+                <ul class="yyy">
+                    <li><a href="#area-6"><span>Opel</span></a></li>
+                    <li><a href="#area-7"><span>Ford</span></a></li>
+                    <li><a href="#area-8"><span>BMW</span></a></li>
+                </ul>
+                <div id="area-6" class="srodek_zakladki">
+                    <ul class="buttons_bn">
+                        <li class="back_button" onclick="javascript:document.location.href='#'"></li>
+                        <li class="next_button" onclick="javascript:document.location.href='#'"
+                            style="margin-left:625px;"></li>
+                    </ul>
+                    <ul class="ul_galery">
+                        <li><img src="img/galeria_zdjecie_1.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_2.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_3.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_1.jpg" alt=""/></li>
+                    </ul>
+                </div>
+                <div id="area-7" class="srodek_zakladki">
+                    <ul class="buttons_bn">
+                        <li class="back_button" onclick="javascript:document.location.href='#'"></li>
+                        <li class="next_button" onclick="javascript:document.location.href='#'"
+                            style="margin-left:625px;"></li>
+                    </ul>
+                    <ul class="ul_galery">
+                        <li><img src="img/galeria_zdjecie_2.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_3.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_2.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_3.jpg" alt=""/></li>
+                    </ul>
+                </div>
+                <div id="area-8" class="srodek_zakladki">
+                    <ul class="buttons_bn">
+                        <li class="back_button" onclick="javascript:document.location.href='#'"></li>
+                        <li class="next_button" onclick="javascript:document.location.href='#'"
+                            style="margin-left:625px;"></li>
+                    </ul>
+                    <ul class="ul_galery">
+                        <li><img src="img/galeria_zdjecie_3.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_2.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_1.jpg" alt=""/></li>
+                        <li><img src="img/galeria_zdjecie_3.jpg" alt=""/></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="block_galeria_zakonczenie"></li>
+        </ul>
+
+        <!-- block ostatnie aukcje -->
+        <ul id="block_aukcje">
+            <li class="block_aukcje_naglowek"><span>.Nowe Auta</span></li>
+            <li>
+                <div class="auction_bg">
+                    <img src="img/buy_car_2.jpg" alt="" class="example_car"/>
+                    <a href="img/full_2.jpg" rel="lightbox-tour"><img src="img/lupa.png" alt="" class="lupa"/></a>
+                    <ul>
+                        <li>Nazwa: <span>VW Golf GTI 570</span></li>
+                        <li>Pojemnosc: <span>5.7</span></li>
+                        <li>Typ skrzyni: <span>Manualna</span></li>
+                        <li>Stan: <span>Nowy</span></li>
+                        <li>Przebieg: <span>140 000</span></li>
+                        <li>Dodany: <span>25 maja 2010r.</span></li>
+                    </ul>
+                    <div class="buy_button">120 323 PLN<a href="#"><img src="img/buy.gif" alt=""/></a></div>
+                    <ul class="auction_options">
+                        <li class="auction_button_1" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_2" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_3" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_4" onclick="javascript:document.location.href='#'"></li>
+                    </ul>
+                </div>
+
+                <div class="auction_bg">
+                    <img src="img/buy_car_2.jpg" alt="" class="example_car"/>
+                    <a href="img/full_2.jpg" rel="lightbox-tour"><img src="img/lupa.png" alt="" class="lupa"/></a>
+                    <ul>
+                        <li>Nazwa: <span>VW Golf GTI 570</span></li>
+                        <li>Pojemnosc: <span>5.7</span></li>
+                        <li>Typ skrzyni: <span>Manualna</span></li>
+                        <li>Stan: <span>Nowy</span></li>
+                        <li>Przebieg: <span>140 000</span></li>
+                        <li>Dodany: <span>25 maja 2010r.</span></li>
+                    </ul>
+                    <div class="buy_button">120 323 PLN<a href="#"><img src="img/buy.gif" alt=""/></a></div>
+                    <ul class="auction_options">
+                        <li class="auction_button_1" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_2" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_3" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_4" onclick="javascript:document.location.href='#'"></li>
+                    </ul>
+                </div>
+
+                <div class="auction_bg">
+                    <img src="img/buy_car_3.jpg" alt="" class="example_car"/>
+                    <a href="img/full_3.jpg" rel="lightbox-tour"><img src="img/lupa.png" alt="" class="lupa"/></a>
+                    <ul>
+                        <li>Nazwa: <span>Ferrari 612</span></li>
+                        <li>Pojemnosc: <span>6.1</span></li>
+                        <li>Typ skrzyni: <span>Auto</span></li>
+                        <li>Stan: <span>Uzywany</span></li>
+                        <li>Przebieg: <span>740 000</span></li>
+                        <li>Dodany: <span>26 maja 2010r.</span></li>
+                    </ul>
+                    <div class="buy_button">320 323 PLN<a href="#"><img src="img/buy.gif" alt=""/></a></div>
+                    <ul class="auction_options">
+                        <li class="auction_button_1" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_2" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_3" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_4" onclick="javascript:document.location.href='#'"></li>
+                    </ul>
+                </div>
+
+                <div class="auction_bg">
+                    <img src="img/buy_car_2.jpg" alt="" class="example_car"/>
+                    <a href="img/full_2.jpg" rel="lightbox-tour"><img src="img/lupa.png" alt="" class="lupa"/></a>
+                    <ul>
+                        <li>Nazwa: <span>VW Golf GTI 570</span></li>
+                        <li>Pojemnosc: <span>5.7</span></li>
+                        <li>Typ skrzyni: <span>Manualna</span></li>
+                        <li>Stan: <span>Nowy</span></li>
+                        <li>Przebieg: <span>140 000</span></li>
+                        <li>Dodany: <span>25 maja 2010r.</span></li>
+                    </ul>
+                    <div class="buy_button">120 323 PLN<a href="#"><img src="img/buy.gif" alt=""/></a></div>
+                    <ul class="auction_options">
+                        <li class="auction_button_1" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_2" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_3" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_4" onclick="javascript:document.location.href='#'"></li>
+                    </ul>
+                </div>
+
+                <div class="auction_bg">
+                    <img src="img/buy_car_2.jpg" alt="" class="example_car"/>
+                    <a href="img/full_2.jpg" rel="lightbox-tour"><img src="img/lupa.png" alt="" class="lupa"/></a>
+                    <ul>
+                        <li>Nazwa: <span>VW Golf GTI 570</span></li>
+                        <li>Pojemnosc: <span>5.7</span></li>
+                        <li>Typ skrzyni: <span>Manualna</span></li>
+                        <li>Stan: <span>Nowy</span></li>
+                        <li>Przebieg: <span>140 000</span></li>
+                        <li>Dodany: <span>25 maja 2010r.</span></li>
+                    </ul>
+                    <div class="buy_button">120 323 PLN<a href="#"><img src="img/buy.gif" alt=""/></a></div>
+                    <ul class="auction_options">
+                        <li class="auction_button_1" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_2" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_3" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_4" onclick="javascript:document.location.href='#'"></li>
+                    </ul>
+                </div>
+
+                <div class="auction_bg">
+                    <img src="img/buy_car_2.jpg" alt="" class="example_car"/>
+                    <a href="img/full_2.jpg" rel="lightbox-tour"><img src="img/lupa.png" alt="" class="lupa"/></a>
+                    <ul>
+                        <li>Nazwa: <span>VW Golf GTI 570</span></li>
+                        <li>Pojemnosc: <span>5.7</span></li>
+                        <li>Typ skrzyni: <span>Manualna</span></li>
+                        <li>Stan: <span>Nowy</span></li>
+                        <li>Przebieg: <span>140 000</span></li>
+                        <li>Dodany: <span>25 maja 2010r.</span></li>
+                    </ul>
+                    <div class="buy_button">120 323 PLN<a href="#"><img src="img/buy.gif" alt=""/></a></div>
+                    <ul class="auction_options">
+                        <li class="auction_button_1" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_2" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_3" onclick="javascript:document.location.href='#'"></li>
+                        <li class="auction_button_4" onclick="javascript:document.location.href='#'"></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="block_aukcje_zakonczenie"></li>
+        </ul>
+        <div id="footer"><span>(c) Copyright Stopek, 2010, All rights reserved!</span></div>
+    </div>
+</div>
+</body>
+</html>
