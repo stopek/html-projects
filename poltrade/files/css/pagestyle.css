@@ -1,0 +1,845 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,300);
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #2c343b;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.width-setter {
+    width: 1364px;
+}
+
+header#top {
+    width: 100%;
+    height: 149px;
+    background: url('../images/top_bg.jpg') no-repeat center center;
+    display: table;
+}
+
+header#top div#header_content {
+    display: table;
+    margin: auto;
+}
+
+header#top div#header_content #logo {
+    float: left;
+    width: 357px;
+    height: 108px;
+    background: url('../images/logo.jpg') no-repeat center center;
+    margin-top: 23px;
+}
+
+header#top div#header_content #logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header#top div#header_content #title {
+    float: left;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 0px 0px 3px #515151;
+    margin: 50px 0 0 35px;
+}
+
+header#top div#header_content #title h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 19px;
+    background: url('../icons/polish_flag.png') no-repeat right center;
+    padding-right: 30px;
+}
+
+header#top div#header_content #title h2 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+header#top div#header_content #menu {
+    float: right;
+    clear: right;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+header#top div#header_content #menu li {
+    float: left;
+    padding: 13px 20px;
+}
+
+header#top div#header_content #menu li.active a {
+    color: #d4ea26;
+}
+
+header#top div#header_content #menu li:last-child {
+    padding-right: 0;
+}
+
+header#top div#header_content #menu li a {
+    color: white;
+}
+
+header#top div#header_content #search {
+    float: right;
+    height: 60px;
+    padding-top: 44px;
+}
+
+header#top div#header_content #search ol {
+    float: left;
+}
+
+header#top div#header_content #search ol li {
+    float: left;
+    padding: 0px;
+    padding: 0px 3px;
+    margin: 2px;
+}
+
+header#top div#header_content #search ol li.active a {
+    color: #a5c12e;
+}
+
+header#top div#header_content #search ol li a {
+    font: 14px 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    width: 100%;
+    padding-right: 2px;
+}
+
+header#top div#header_content #search ol li:not(:last-child) {
+    border-right: 2px solid #99b2c7;
+}
+
+header#top div#header_content #search form {
+    float: right;
+}
+
+header#top div#header_content #search form input[type=text] {
+    width: 190px;
+    height: 24px;
+    background: white;
+    border: 0px solid transparent;
+    float: left;
+    color: black;
+}
+
+header#top div#header_content #search form input[type=submit] {
+    float: left;
+    margin-left: -24px;
+    width: 24px;
+    height: 24px;
+    background: url('../icons/search.gif') no-repeat center center;
+    border: 0px solid transparent;
+    cursor: pointer;
+}
+
+#slider {
+    display: table;
+    margin: auto;
+    margin-top: 32px;
+}
+
+#slider #slider_content {
+    width: 1404px;
+    margin-top: 32px;
+    height: 430px;
+    margin: 0 -21px;
+}
+
+/** strona główna */
+section#home {
+    width: 100%;
+    display: table;
+    background: url('../images/home_shadow.gif') repeat-x left 50px;
+    margin: 70px 0 30px 0;
+}
+
+section#home #home_content {
+    display: table;
+    margin: auto;
+}
+
+section#home #home_content ul#blocks {
+    display: table;
+    margin: auto;
+}
+
+section#home #home_content ul#blocks > li {
+    float: left;
+    background: white;
+    box-shadow: 0 0 20px #999999;
+    width: 421px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    height: 257px;
+    margin-right: 30px;
+}
+
+section#home #home_content ul#blocks > li:last-child {
+    margin-right: 0;
+}
+
+section#home #home_content ul#blocks > li .left {
+    float: left;
+    padding: 10px;
+    width: 267px;
+}
+
+section#home #home_content ul#blocks > li .right {
+    float: left;
+    width: 134px;
+}
+
+section#home #home_content ul#blocks > li .right img {
+
+    -webkit-border-radius: 0px 23px 23px 0;
+    -moz-border-radius: 0px 23px 23px 0;
+    border-radius: 0px 23px 23px 0;
+}
+
+section#home #home_content ul#blocks > li h2 {
+    font: 25px 'Titillium Web', sans-serif;
+    font-weight: 700;
+    color: black;
+    padding: 10px 0;
+}
+
+section#home #home_content ul#blocks > li p {
+    font: 14px Verdana;
+    display: block;
+    height: 70px;
+}
+
+section#home #home_content ul#blocks > li p strong {
+    font-weight: bold;
+}
+
+section#home #home_content ul#blocks > li ol {
+    font: 13px verdana;
+    list-style: disc;
+    margin-left: 17px;
+}
+
+
+/** footer */
+#footer {
+    display: table;
+    width: 100%;
+}
+
+#footer #footer_colorizer {
+    margin-top: 5px;
+    background: #f2f2f2;
+    border-top: 4px solid #cccccc;
+
+    box-shadow: 0px 5px 0px white inset;
+}
+
+#footer #footer_content {
+    display: table;
+    margin: auto;
+}
+
+#footer #footer_logos {
+    display: table;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#footer #footer_logos ul {
+    display: table;
+    width: 100%;
+}
+
+#footer #footer_logos li {
+    float: right;
+}
+
+#footer #footer_logos li:first-child {
+    float: left;
+}
+
+#footer #footer_logos li a {
+    padding: 0 10px;
+    display: block;
+}
+
+#footer #footer_content {
+    padding: 20px;
+}
+
+#footer #footer_content #footer_info > ul {
+    display: table;
+    width: 100%;
+    font-family: verdana;
+}
+
+#footer #footer_content #footer_info > ul > li {
+    width: 33%;
+    float: left;
+    font-size: 12px;
+}
+
+#footer #footer_content #footer_info > ul > li h2 {
+    font-size: 14px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#footer #footer_content #footer_info > ul > li strong {
+    padding: 15px 5px 5px 0px;
+    display: block;
+    font-weight: bold;
+}
+
+footer #footer_copyright {
+    display: table;
+    margin: auto;
+    text-align: right;
+    font: 12px Arial;
+}
+
+footer #footer_copyright p {
+    padding: 10px;
+}
+
+footer #footer_copyright #footer_icon_poltrade {
+    background: url('../icons/poltrade_footer_icon.gif') no-repeat center center;
+    display: inline-block;
+    width: 79px;
+    height: 21px;
+    margin-bottom: -8px;
+    margin-right: 3px;
+}
+
+footer #footer_copyright #footer_icon_neus {
+    background: url('../icons/neus_footer_icon.gif') no-repeat center center;
+    display: inline-block;
+    width: 61px;
+    height: 21px;
+    margin-bottom: -8px;
+    margin-right: 3px;
+}
+
+/* oferta */
+article#offer {
+    width: 100%;
+    display: table;
+    padding-bottom: 90px;
+}
+
+article#offer #offer_content {
+    display: table;
+    margin: auto;
+}
+
+article#offer #offer_menu {
+    width: 500px;
+    font: 18px verdana;
+    text-transform: uppercase;
+    color: #355b84;
+
+    float: left;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0px 0px 20px #7f7f7f;
+    padding: 30px 0;
+    margin: 20px 0;
+}
+
+article#offer #offer_menu a {
+    color: #355b84;
+}
+
+article#offer #offer_menu h2 {
+    background: #d3e926;
+    padding: 6px 0 6px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+article#offer #offer_menu li h2.active {
+    background: #045695;
+    color: white;
+}
+
+article#offer #offer_menu h3 {
+    font-weight: bold;
+    display: inline-block;
+}
+
+article#offer #offer_menu .sub {
+    margin: 10px 0;
+}
+
+article#offer #offer_menu .sub li {
+    margin-bottom: 3px;
+}
+
+article#offer #offer_menu h4 {
+    display: inline-block;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+article#offer #offer_menu h3.active_sub,
+article#offer #offer_menu h4.active_sub {
+    color: #8c9924 !important;
+}
+
+article#offer #offer_menu h4 small {
+    font-weight: normal;
+}
+
+article#offer #offer_menu a.arrow {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    border-left: 8px solid #355b84;
+}
+
+article#offer #offer_box {
+    display: table;
+    float: left;
+    width: 830px;
+    margin-left: 30px;
+}
+
+article#offer #offer_box img {
+    max-width: 100%;
+    max-height: 100%;
+    display: table;
+    margin: auto;
+}
+
+article#offer #offer_box p {
+
+    font-size: 15px;
+    padding: 10px 40px;
+    line-height: 18px;
+}
+
+article#offer #offer_box p strong {
+    font-weight: bold;
+}
+
+article#offer #offer_box h2 {
+    font: 16px verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 5px solid #d5ea29;
+    display: table;
+    padding-bottom: 3px;
+    margin-left: 40px;
+
+}
+
+article#offer ul#tabs {
+    float: right;
+    display: table;
+    margin-right: -38px;
+}
+
+article#offer ul#tabs li {
+    clear: both;
+    height: 180px;
+    text-align: center;
+    width: 14px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2587b2+0,4da198+100 */
+    background: #2587b2; /* Old browsers */
+    background: -moz-linear-gradient(top, #2587b2 0%, #4da198 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2587b2), color-stop(100%, #4da198)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #2587b2 0%, #4da198 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #2587b2 0%, #4da198 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2587b2 0%, #4da198 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #2587b2 0%, #4da198 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2587b2', endColorstr='#4da198', GradientType=0); /* IE6-9 */
+
+    cursor: pointer;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+    margin-top: 10px;
+    box-shadow: 7px 0 30px -8px #999999, 7px 0 30px -8px #999999;
+    padding: 12px;
+
+}
+
+article#offer ul#tabs li:hover,
+article#offer ul#tabs li.active {
+    background: #c7dd18;
+    padding-left: 18px;
+    margin-right: -18px;
+}
+
+article#offer ul#tabs li div {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    text-align: center;
+    -webkit-transform: -webkit-translateY (85px);
+}
+
+article#offer ul#tabs li div a {
+    font: 17px verdana;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0px 0px 3px #515151;
+}
+
+article#offer ul.hidden_menu {
+    display: none;
+}
+
+
+/** ukryte submenu w ofercie */
+ol.submenu_content {
+    display: none;
+    margin: 5px 0;
+}
+
+ol.submenu_content li {
+}
+
+ol.submenu_content h5 {
+    font: 12px verdana;
+    color: #8c9924;
+}
+
+ol.submenu_content h5 a {
+    color: #8c9924 !important;
+    font-weight: bold;
+    padding-left: 8px;
+    margin-left: 4px;
+    display: block;
+    text-transform: none;
+    background: url('../icons/offer_menu_li.gif') no-repeat left center;
+}
+
+
+/** mapa strony */
+.sitemap {
+    font: 12px verdana;
+    color: #7b7c7d;
+    display: table;
+    margin: 20px 20px 20px 0;
+    width: 100%;
+}
+
+.sitemap ol {
+    float: right;
+}
+
+.sitemap ol li {
+    display: inline-block;
+    letter-spacing: -4px;
+}
+
+.sitemap ol li a {
+    letter-spacing: normal;
+    color: #7b7c7d;
+    padding: 3px 5px;
+}
+
+/** galeria ze zrealizowanymi projektami */
+section#gallery {
+    width: 100%;
+}
+
+section#gallery #gallery_content {
+    display: table;
+    margin: auto;
+}
+
+#gallery_images {
+    display: table;
+    padding: 0px 0;
+    width: 100%;
+}
+
+#gallery_images ul {
+}
+
+#gallery_images li div.header {
+    width: 100%;
+    border-bottom: 3px solid #d6d7d8;
+    padding-bottom: 10px;
+    display: table;
+}
+
+#gallery_images li div.header ol {
+    margin-left: 50px;
+    display: table;
+}
+
+#gallery_images ul li div.header ol li {
+    float: left;
+    font: 18px verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#gallery_images ul li div.header ol li img {
+    max-height: 30px;
+    margin-top: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+#gallery_images ul li div.header ol li span {
+    float: left;
+    padding-top: 12px;
+    padding-right: 12px;
+}
+
+#gallery_images ul > li {
+    float: left;
+    width: 100%;
+}
+
+#gallery_images li div.images {
+    padding: 20px 50px;
+}
+
+#gallery_images li div.images ul {
+    display: table;
+    width: auto;
+    margin: auto;
+}
+
+#gallery_images li div.images ul li {
+    float: left;
+    width: 195px;
+    height: 138px;
+    margin: 9px;
+}
+
+#gallery_images li div.images ul li:nth-child(6n) {
+    margin-right: 0;
+}
+
+#gallery_images li div.images ul li:nth-child(6n+1) {
+    margin-left: 0;
+}
+
+/** formatownaie kontaktu */
+section#contact {
+    display: table;
+    width: 100%;
+}
+
+section#contact #contact_content {
+    display: table;
+    margin: auto;
+}
+
+section#contact #contact_content #contact_left {
+    width: 50%;
+    float: left;
+}
+
+section#contact #contact_content #contact_right {
+    width: 50%;
+    float: right;
+}
+
+section#contact #contact_content h2 {
+    font: 18px verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 5px solid #d5ea29;
+    display: table;
+    padding-bottom: 3px;
+    margin-left: 40px;
+}
+
+section#contact #contact_content h2:nth-child(2n) {
+    margin-right: 40px;
+}
+
+section#contact #contact_content p:nth-child(2n) {
+    margin-right: 40px;
+}
+
+section#contact #contact_content p {
+    font-size: 15px;
+    padding: 10px 40px;
+    line-height: 18px;
+}
+
+section#contact #contact_content p strong {
+    font-weight: bold;
+}
+
+section#contact hr {
+    border: 2px solid #d6d7d8;
+}
+
+section#contact #contact_form {
+    display: table;
+    padding: 25px 35px;
+
+    box-shadow: 0 0 20px #999999;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 6px;
+    width: 530px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+section#contact #contact_form #contact_form_left {
+    float: left;
+    width: 60%;
+}
+
+section#contact #contact_form #contact_form_right {
+    float: right;
+    width: 40%;
+}
+
+section#contact #contact_form h3 {
+    font: 17px verdana;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #d6d5d6;
+    padding-bottom: 2px;
+}
+
+section#contact #contact_form ol li {
+    margin: 3px;
+    font: 12px verdana;
+    text-transform: uppercase;
+}
+
+section#contact #contact_form input[type=text] {
+    width: 263px;
+    height: 30px;
+    background: #ffe9e9;
+    border: 0px solid transparent;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+section#contact #contact_form input[type=text].colorizer::-webkit-input-placeholder {
+    color: #c05858;
+}
+
+section#contact #contact_form input[type=text].colorizer:-moz-placeholder {
+    color: #c05858;
+}
+
+section#contact #contact_form input[type=text].colorizer::-moz-placeholder {
+    color: #c05858;
+}
+
+section#contact #contact_form input[type=text].colorizer:-ms-input-placeholder {
+    color: #c05858;
+}
+
+
+section#contact #contact_form hr {
+    border: 0px solid transparent;
+    border-top: 3px solid #d6d7d8;
+    margin: 7px 0;
+    clear: both;
+}
+
+section#contact #contact_form textarea {
+    width: 520px;
+    background: #ffe9e9;
+    border: 0px solid transparent;
+    margin-left: 3px;
+    resize: vertical;
+    height: 221px;
+    font-weight: bold;
+}
+
+section#contact #contact_form #contact_form_right ol {
+    margin: 40px 0 0 30px;
+}
+
+section#contact #contact_form #contact_footer {
+    display: table;
+    width: 100%;
+    margin-top: 6px;
+}
+
+section#contact #contact_form #contact_footer small {
+    color: #c45d5d;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+    float: left;
+}
+
+section#contact #contact_form #contact_footer input[type=submit] {
+    float: right;
+    width: 76px;
+    height: 24px;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    background: #e9e9ea;
+    font: 12px verdana;
+    font-weight: bold;
+}
+
+/** formatownaie o firmie */
+section#about_us {
+    display: table;
+    width: 100%;
+}
+
+section#about_us #about_us_content {
+    display: table;
+    margin: auto;
+}
+
+section#about_us #about_us_content h2 {
+    font: 18px verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 5px solid #d5ea29;
+    display: table;
+    padding-bottom: 3px;
+    margin-left: 40px;
+}
+
+section#about_us #about_us_content p {
+    font-size: 15px;
+    padding: 10px 40px;
+    line-height: 18px;
+}
+
+section#about_us #about_us_content p strong {
+    font-weight: bold;
+}
+
+section#about_us hr {
+    border: 0px solid transparent;
+    border-top: 3px solid #d6d7d8;
+}
