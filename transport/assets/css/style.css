@@ -1,0 +1,620 @@
+body, html, main, input, textarea, select {
+    font-family: 'Lato', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-stroke: 1px transparent
+}
+
+main {
+    /*overflow-x: hidden;*/
+}
+
+ol, li, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.bordered-button {
+    display: inline-block;
+    padding: 10px 70px;
+    border: 3px solid #fca900;
+    color: #fca900;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 25px;
+    transition: background 0.2s ease;
+}
+
+.bordered-button:hover {
+    background: rgba(252, 169, 0, 0.15);
+    color: #fca900;
+}
+
+
+hgroup {
+    padding: 30px 0;
+    color: black;
+    text-transform: uppercase;
+}
+
+hgroup h1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+hgroup h2 {
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+hgroup h3 {
+    font-size: 16px;
+    color: #a19c9c;
+    text-transform: none;
+    padding: 25px 0;
+    line-height: 19px;
+    margin-top: 20px;
+}
+
+
+.fixed-map {
+    height: 800px;
+    background-image: url('../images/map.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center right !important;
+}
+
+
+/** top header **/
+.header-top {
+    background: #111111;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.header-top .phone-link {
+    color: #fca900;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px 0;
+    display: block;
+}
+
+.header-top .phone-link .fa {
+    font-size: 25px;
+    margin: 0px 10px;
+    margin-bottom: -5px;
+}
+
+.header-top .stay-connect {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4f4f4f;
+    margin-right: 25px;
+}
+
+.header-top .top-block-icons .fa {
+    font-size: 25px;
+    color: white;
+    margin-right: 5px;
+}
+
+.header-top .top-inline-list {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+/** środkowy header **/
+.header-middle {
+    background: #fcfcfc;
+}
+
+.header-middle .home-logo {
+    margin: 50px 0;
+    display: block;
+}
+
+.header-middle .home-menu {
+    margin: 70px 0;
+}
+
+.home-menu {
+}
+
+.home-menu .nav-link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0.5em;
+}
+
+.home-menu .nav-link:not(:last-child):after {
+    display: inline-block;
+    content: ' | ';
+    padding-left: 0.5em;
+}
+
+.home-menu .nav-link:hover {
+    text-decoration: underline;
+}
+
+.home-menu .nav-link.active {
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+
+
+/** slider **/
+.slider .carousel-item {
+    position: relative;
+    height: 500px;
+    background-position: center center;
+}
+
+.slider .carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.slider .carousel-caption h3 {
+    font-size: 53px;
+    font-weight: 900;
+    display: block;
+    border-left: 6px solid #fca900;
+    padding: 0 30px;
+    position: relative;
+}
+
+.slider .carousel-caption h3:before {
+    content: '';
+    display: block;
+    background: rgba(252, 169, 0, 0.15);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 300px;
+    left: -300px;
+}
+
+.slider .carousel-caption h3 small {
+    font-weight: 300;
+    display: block;
+}
+
+.slider .carousel-caption h3 em {
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+    color: #5c5c5c;
+}
+
+.company-section {
+    background: #dbd9d4;
+    padding: 20px 0 50px 0;
+}
+
+.company-section .company-text {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.company-icons {
+    background: url('../images/company_bg.jpg');
+    background-position: center center;
+    padding-bottom: 80px;
+}
+
+.company-icons .comapny-icons-list {
+    padding: 80px 0;
+}
+
+.company-icons .comapny-icons-list .company-icon-box {
+    width: 230px;
+    height: 230px;
+    background: rgba(252, 169, 0, 0.68);
+    color: white;
+    border-radius: 50%;
+    padding-top: 15%;
+    vertical-align: middle;
+    display: inline-block;
+    transition: background 0.2s ease;
+    margin: 10px 0;
+}
+
+.company-icons .comapny-icons-list .company-icon-box .fa {
+    font-size: 90px;
+}
+
+.company-icons .comapny-icons-list .company-icon-box h3 {
+    font-size: 21px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.company-icons .comapny-icons-list .company-icon-box:hover {
+    background: white;
+}
+
+.company-icons .comapny-icons-list .company-icon-box:hover h3 {
+    color: #624200;
+}
+
+.company-icons .comapny-icons-list .company-icon-box:hover .fa {
+    color: #624200;
+}
+
+.company-icons .hint-text h2 {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+
+.company-icons .hint-text {
+    position: relative;
+    display: table;
+    margin: auto;
+}
+
+.company-icons .hint-text:before,
+.company-icons .hint-text:after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    background: #c0c0c0;
+    left: 0;
+}
+
+.company-icons .hint-text:after {
+    right: 0;
+    left: auto;
+}
+
+/** aktualności **/
+.news-section {
+    padding: 50px 0;
+    background: white;
+    overflow: hidden;
+}
+
+.news-section .news-item {
+    height: 342px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.news-section .news-item .news-bg {
+
+    padding: 15px;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: block;
+    position: absolute;
+}
+
+.news-section .news-item .title {
+    display: block;
+    font-weight: 900;
+    font-size: 19px;
+    color: white;
+}
+
+.news-section .news-item .news-text {
+    color: white;
+    margin: 0;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: 300;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+    display: block;
+}
+
+.news-section .news-item:hover .news-text {
+    height: auto;
+}
+
+.news-section .news-item .news-text a {
+    display: table;
+    clear: both;
+    float: right;
+    color: white;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+
+/** nasza oferta **/
+.offer-section {
+    overflow: hidden;
+    background-image: url('../images/offer_bg.jpg');
+    background-position: center center;
+    padding-bottom: 80px;
+}
+
+.offer-section hgroup {
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.offer-section hgroup h1 {
+    font-size: 37px;
+    font-style: italic;
+}
+
+.offer-section hgroup h2 {
+    color: #fca900;
+    text-transform: lowercase;
+    font-size: 20px;
+}
+
+.offer-section hgroup {
+    position: relative;
+}
+
+.offer-section hgroup:before,
+.offer-section hgroup:after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    top: 30%;
+    background: #fca900;
+    left: 0;
+}
+
+.offer-section hgroup:after {
+    right: 0;
+    left: auto;
+}
+
+.offer-section .offer-item {
+    margin: 30px 0;
+}
+
+.offer-section .offer-icon {
+    border: 2px solid white;
+    width: 120px;
+    height: 120px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.offer-section .offer-icon .fa {
+    font-size: 40px;
+}
+
+.offer-section .offer-container {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.offer-section .offer-item .list-inline-item {
+    vertical-align: top;
+}
+
+.offer-section .offer-container h3 {
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.offer-section .offer-container p {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.contact-form .alert.alert-success {
+    border-radius: 0;
+    border: 0;
+    background: #819a1c;
+    color: white;
+    text-align: center;
+}
+
+.contact-form {
+    padding: 90px 0;
+    background: #e9e9e9;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+    background: white;
+    border: 0;
+    border-left: 5px solid #454545;
+    border-radius: 0;
+    padding: 15px 25px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
+.contact-form textarea:focus {
+    border-left: 5px solid #fca900;
+}
+
+.contact-form input[type=submit] {
+    background: #454545;
+    border-radius: 0;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 0;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+    background: #fca900;
+}
+
+/** footer **/
+.black-row {
+    background: #111111;
+    padding: 50px 0;
+}
+
+.black-row .address-list {
+    margin: 15px 0;
+    color: #a19c9c;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.black-row .menu-list {
+    margin: 15px 0;
+}
+
+.black-row .menu-list a {
+    text-decoration: underline;
+    color: #636363;
+    font-weight: 300;
+    transition: color 0.2s ease;
+}
+
+.black-row .menu-list a:hover {
+    color: #fca900;
+}
+
+.black-row .menu-list li {
+    margin: 8px 0;
+}
+
+.black-row .footer-logo {
+    margin: 30px 0;
+    display: block;
+}
+
+.black-row .footer-author {
+    color: white;
+    font-weight: 500;
+    color: #494949;
+    font-size: 15px;
+}
+
+.black-row .footer-author a {
+    color: #747474;
+}
+
+.black-row .footer-author a:hover {
+    color: #fca900;
+    text-decoration: underline;
+}
+
+
+/** google map **/
+.google-map, #map {
+    height: 400px;
+    background: #333333;
+}
+
+.up-button {
+    width: 100px;
+    height: 100px;
+    background: rgba(178, 178, 178, 0.6);
+    text-align: center;
+    padding-top: 25px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.up-button .fa {
+    font-size: 55px;
+    color: #303030;
+}
+
+
+@media (max-width: 989px) {
+    .company-icons {
+        background-size: auto 100%;
+    }
+
+    .company-icons .hint-text:before, .company-icons .hint-text:after,
+    .offer-section hgroup:before, .offer-section hgroup:after {
+        display: none;
+    }
+
+    .company-icons .hint-text h2 {
+        border: 1px solid white;
+        padding: 10px 0;
+    }
+
+    .header-middle .home-menu {
+        margin: 15px 0;
+    }
+
+    .slider .carousel-caption h3 {
+        font-size: 40px;
+    }
+
+    .navbar-toggler.navbar-toggler-center {
+
+    }
+
+    .fixed-map {
+        height: 0;
+        display none;
+    }
+}
+
+@media (max-width: 500px) {
+    .company-icons .comapny-icons-list .company-icon-box h3 {
+        font-size: 18px;
+    }
+
+    .slider .carousel-caption h3 {
+        font-size: 20px;
+    }
+
+}

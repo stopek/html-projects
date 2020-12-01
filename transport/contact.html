@@ -1,0 +1,17 @@
+<?php
+
+$to = 'stopek.pawel@gmail.com';
+$subject = 'Wiadomość ze strony jacekbernadtransport.pl';
+$message = ""
+        . "Adres email: {$_POST['email']}\n"
+        . "Numer telefonu: {$_POST['phone']}\n"
+        . "Treść: {$_POST['message']}";
+
+
+$headers = 'From: kontakt@jacekbernadtransport.pl' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+
+
+mail($to, $subject, $message, $headers);
+
+header("Location: https://www.stopczynski.pl/transport/?message=send#kontakt");
