@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+    <meta content="" name="Description"/>
+    <meta content="" name="Keywords"/>
+    <meta content="" name="Author"/>
+    <meta content="index, follow" name="Robots"/>
+    <meta content="index, follow" name="Googlebot"/>
+    <link href="files/icons/favicon.ico" rel="Shortcut icon"/>
+    <link href="files/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="files/css/pagestyle.css" rel="stylesheet" type="text/css"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="files/scripts/jquery-2.1.1.js"></script>
+    <script src="files/scripts/scripts.js"></script>
+    <script src="files/scripts/background.cycle.min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#bgimage").backgroundCycle({
+          imageUrls: [
+            'files/samples/slider_1.jpg',
+            'files/samples/slider_2.jpg'
+          ],
+          fadeSpeed: 2000,
+          duration: 5000,
+          backgroundSize: SCALING_MODE_COVER
+        });
+      });
+    </script>
+</head>
+<body>
+<div id="site">
+    <header>
+        <nav id="top">
+            <div class="width-setter" id="top_content">
+                <div id="logo">
+                    <a href="#">
+                        <img alt="" src="files/images/logo.png"/>
+                    </a>
+                </div>
+                <div id="show_menu">
+                    <a href="#">menu</a>
+                </div>
+                <ul id="menu">
+                    <li class="active"><a href="#" rel="_menu_1">produkty</a></li>
+                    <li><a href="#" rel="_menu_2">bestsellery</a></li>
+                    <li><a href="#" rel="_menu_3">programy pielegnacyjne</a></li>
+                </ul>
+                <div id="login_box">
+                    <ul>
+                        <li id="login">
+                            <a href="#"><strong>zaloguj sie</strong></a>
+                            <a href="#">rejestracja</a>
+                        </li>
+                        <li class="icons" id="user_icon"><a href="#"></a></li>
+                        <li class="icons" id="search_icon"><a href="#"></a></li>
+                        <li class="icons" id="cart_icon"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="hidden_search">
+                <div class="width-setter" id="hidden_search_content">
+                    <div id="h_search">
+                        <div id="icon">
+                            <a href="#"></a>
+                        </div>
+                        <input autofocus name="h_search" placeholder="O czym myślisz?" type="text">
+                        <span id="canel_search">anuluj</span>
+                    </div>
+                </div>
+                <!-- tutaj wyniki wyszukiwania -->
+                <div id="search_result">
+                    <div class="width-setter" id="search_result_content">
+                        <ul>
+                            <li><a href="#">znalezione 1</a></li>
+                            <li><a href="#">znalezione 2</a></li>
+                            <li><a href="#">znalezione 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hidden_menu">
+                <div class="width-setter" id="hidden_menu_content">
+                    <ul id="_menu_1">
+                        <li>
+                            <h2>Nowości</h2>
+                            <ol>
+                                <li><a href="#">Nowe produkty</a></li>
+                                <li><a href="#">Aktualne promocje</a></li>
+                                <li><a href="#">Karty stałego klienta</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Twarz</h2>
+                            <ol>
+                                <li><a href="#">Mydło alleppo</a></li>
+                                <li><a href="#">Peelingi</a></li>
+                                <li><a href="#">Kremy</a></li>
+                                <li><a href="#">Serum pod oczy</a></li>
+                                <li><a href="#">Bio hydrolaty</a></li>
+                                <li><a href="#">Glinki</a></li>
+                                <li><a href="#">Bio olejki</a></li>
+                                <li><a href="#">Demakijaż</a></li>
+                                <li><a href="#">Dziecko</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Ciało</h2>
+                            <ol>
+                                <li><a href="#">Mydło alleppo</a></li>
+                                <li><a href="#">Prysznic</a></li>
+                                <li><a href="#">Peeling</a></li>
+                                <li><a href="#">Balsamy</a></li>
+                                <li><a href="#">Masła</a></li>
+                                <li><a href="#">Bio olejki</a></li>
+                                <li><a href="#">Mama</a></li>
+                                <li><a href="#">Dziecko</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Włosy</h2>
+                            <ol>
+                                <li><a href="#">Szampony</a></li>
+                                <li><a href="#">Odżywki</a></li>
+                                <li><a href="#">Maski</a></li>
+                                <li><a href="#">Elixir</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>BABY</h2>
+                            <ol>
+                                <li><a href="#">Mydło</a></li>
+                                <li><a href="#">Ciało i włosy 2w1</a></li>
+                                <li><a href="#">Delikatne mleczko</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Mężczyzna</h2>
+                            <ol>
+                                <li><a href="#">Mydło</a></li>
+                                <li><a href="#">Prysznic</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>SPA</h2>
+                            <ol>
+                                <li><a href="#">Aromaterapia</a></li>
+                                <li><a href="#">Świece do masażu</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+
+                    <ul id="_menu_2">
+                        <li>
+                            <h2>test 1</h2>
+                            <ol>
+                                <li><a href="#">test 11</a></li>
+                                <li><a href="#">test 12</a></li>
+                                <li><a href="#">test 13</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul id="_menu_3">
+                        <li>
+                            <h2>test 2</h2>
+                            <ol>
+                                <li><a href="#">test 21</a></li>
+                                <li><a href="#">test 22</a></li>
+                                <li><a href="#">test 23</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="bgimage" style="background-repeat: no-repeat; background-position: center center;">
+            <h1>zatrzymaj <span>czas</span></h1>
+            <h2>manufaktura kosmetyków<br/>naturalnych</h2>
+        </div>
+    </header>
+
+    <!-- nagłówek -->
+    <div class="black_header">
+        <div class="black_header_content width-setter">
+            <h2>
+                <a href="#">strona główna</a> /
+                <a href="#">kosmetyki zapachowe</a> /
+                <a href="#">PASSION FLOWER OIL</a>
+            </h2>
+            <h3>
+                kosmetyki zapachowe
+            </h3>
+        </div>
+    </div>
+    <!-- nagłówek koniec -->
+
+
+    <div class="width-setter" id="page">
+        <section id="cart">
+            <div id="cart_image">
+                <a href="#" style="background: url('files/samples/product_2.png') no-repeat center center;"></a>
+            </div>
+            <div id="cart_description">
+                <div id="cart_description_header">
+                    <h1>passion flower oil</h1>
+                    <a href="#"></a>
+                </div>
+                <ul>
+                    <li class="price">
+                        <h2>podkład do makijażu</h2>
+                        <span>- <strong>99 zł</strong> / 200 ml -</span>
+                    </li>
+                    <li>
+                        <h3>O passion</h3>
+                        <span>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                    industry. Lorem Ipsum has been the industry's standard.
+                                </span>
+                    </li>
+                    <li>
+                        <h3>Cera</h3>
+                        <span>Sucha naczynkowa</span>
+                    </li>
+                    <li>
+                        <h3>Zastosowanie</h3>
+                        <ol class="cart_icons">
+                            <li><img alt="" src="files/images/use_1.gif" title="use 1"/></li>
+                            <li><img alt="" src="files/images/use_2.gif" title="use 2"/></li>
+                            <li><img alt="" src="files/images/use_3.gif" title="use 3"/></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Certyfikaty</h3>
+                        <ol class="cart_icons">
+                            <li><img alt="" src="files/images/cert_1.gif" title="cert 1"/></li>
+                            <li><img alt="" src="files/images/cert_2.gif" title="cert 2"/></li>
+                            <li><img alt="" src="files/images/cert_3.gif" title="cert 3"/></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Ocena produktu</h3>
+                        <ol class="cart_icons stars">
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div id="cart_ingredients">
+                <div id="cart_ingredients_header">
+                    <h3>składniki</h3>
+                </div>
+                <ol>
+                    <li>
+                        <div>
+                            <img alt="" src="files/samples/ingred_1.jpg"/>
+                        </div>
+                        <h4>kwiat róży</h4>
+                    </li>
+                    <li>
+                        <div>
+                            <img alt="" src="files/samples/ingred_2.jpg"/>
+                        </div>
+                        <h4>ziarna zbóż</h4>
+                    </li>
+                    <li>
+                        <div>
+                            <img alt="" src="files/samples/ingred_3.jpg"/>
+                        </div>
+                        <h4>lawenda</h4>
+                    </li>
+                    <li>
+                        <div>
+                            <img alt="" src="files/samples/ingred_4.jpg"/>
+                        </div>
+                        <h4>masło kokosowe</h4>
+                    </li>
+                </ol>
+            </div>
+            <div id="cart_info">
+                <div id="cart_info_header">
+                    <h3>skład i działanie</h3>
+                </div>
+                <div id="cart_info_content">
+                    <ol>
+                        <li>100% czysty, tłoczony na zimno</li>
+                        <li>zawiera witaminy A,C, K, omega 6 i skwalen</li>
+                        <li>intensywnie odżywia, dotlenia, zapobiega utracie wody</li>
+                        <li>wykazuje silne właściwości przeciwzmarszczkowe</li>
+                        <li>reguluje wydzielanie sebum.</li>
+                        <li>delikatna konsystencja łatwo się wchłania zawarte w nim witaminy C i K</li>
+                        <li>uszczelniają i wzmacniają naczynka krwionośne</li>
+                        <li>doskonale regeneruje i zwiększa sprężystość skóry</li>
+                        <li>polecany do cery dojrzałej, wrażliwej i naczynkowej.</li>
+                    </ol>
+                </div>
+            </div>
+            <div id="cart_comments">
+                <div id="cart_comments_header">
+                    <h3>komentarze</h3>
+                    <a href="#">dodaj komentarz</a>
+                </div>
+                <ol>
+                    <li><span>Lorem ipsum is dolor est is simply</span></li>
+                    <li class="inactive">
+                                <span>
+                                    Lorem ipsum is dolor est is simply
+                                    Lorem ipsum is dolor est is simply
+                                    Lorem ipsum is dolor est is simply
+                                    Lorem ipsum is dolor est is simply
+                                    Lorem ipsum is dolor est is simply
+                                    Lorem ipsum is dolor est is simply
+                                </span>
+                    </li>
+                    <li class="inactive"><span>Lorem ipsum is dolor est is simply :)</span></li>
+                </ol>
+                <div id="cart_comments_more">
+                    <a href="#" rel="zobacz mniej">zobacz więcej</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <nav class="width-setter">
+            <ul>
+                <li>
+                    <h2>o Bioline</h2>
+                    <ol>
+                        <li><a href="#">- informacje o firmie</a></li>
+                        <li><a href="#">- wspolpraca</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>jak możemy Ci pomóc?</h2>
+                    <ol>
+                        <li><a href="#">- napisz do nas</a></li>
+                        <li><a href="#">- zadzwon</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>przydatne informacje</h2>
+                    <ol>
+                        <li><a href="#">- informacje o wysylce</a></li>
+                        <li><a href="#">- zwroty</a></li>
+                    </ol>
+                </li>
+
+
+                <li class="smaller">
+                    <h3>dołącz do naszej<br/>społeczności</h3>
+                    <ol class="icons_box">
+                        <li><a href="#" id="icon_fb"></a></li>
+                        <li><a href="#" id="icon_yt"></a></li>
+                        <li><a href="#" id="icon_in"></a></li>
+                    </ol>
+                </li>
+
+                <li class="smaller">
+                    <h3>zobacz lokalizację<br/>naszej perfumerii</h3>
+                    <ol class="icons_box">
+                        <li><a href="#" id="icon_lc"></a></li>
+                    </ol>
+                </li>
+
+                <li class="smaller">
+                    <h3>zapisz się na<br/>newsletter</h3>
+                    <ol>
+                        <li>
+                            <form action="/" method="post">
+                                <input name="email" type="text"/><br/>
+                                <input name="send" type="submit" value="wyślij"/>
+                            </form>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <div class="width-setter" id="copyright">
+        <ul>
+            <li><a href="#">regulamin</a></li>
+            <li><a href="#">polityka prywatnosci</a></li>
+            <li>&copy; Bioline, All rights reserved</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
