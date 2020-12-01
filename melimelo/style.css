@@ -1,0 +1,243 @@
+body, html, div, ul, li, h1, h2, ol, span, small {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana';
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, span, p, small {
+    font-weight: normal;
+}
+
+
+#page {
+    width: 1178px;
+    display: table;
+    margin: auto;
+    padding: 0;
+}
+
+#header {
+    height: 349px;
+    background: url('images/header.jpg') no-repeat center center;
+    position: relative;
+}
+
+#header #menu {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#header #menu li {
+    float: left;
+}
+
+#header #menu li a {
+    color: #599e95;
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+
+.logo-large {
+    width: 173px;
+    height: 173px;
+    background: url('images/logo.jpg') no-repeat center center;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+.logo-small {
+    width: 173px;
+    height: 173px;
+    display: table;
+    margin: 20px auto;
+    background: url('images/logo.jpg') no-repeat center center;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#title {
+    padding: 15px 0;
+    color: #599e95;
+    font-size: 26px;
+    text-align: center;
+}
+
+#title strong {
+    font-weight: bold;
+}
+
+#description {
+    text-align: center;
+    color: #599e95;
+    padding: 5px 90px;
+    font-size: 18px;
+}
+
+#images {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#images li {
+    display: inline-block;
+    margin: 15px;
+}
+
+
+#specification {
+    text-align: center;
+    font-size: 21px;
+    padding: 60px 0;
+}
+
+#specification ol {
+    display: inline-block;
+    text-align: left;
+}
+
+
+#footer {
+    margin-bottom: 15px;
+}
+
+#footer ul {
+    display: table;
+    width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#footer ul li.short {
+    display: table-cell;
+    width: 25%;
+    margin-right: 2%;
+    padding-left: 1%;
+}
+
+#footer ul li.normal {
+    display: table-cell;
+    width: 35%;
+    margin-right: 2%;
+    padding-left: 2%;
+}
+
+#footer ul > li:not(:last-child) {
+    border-right: 2px solid #599e95;
+}
+
+#footer ul > li li {
+    clear: both;
+    padding: 10px 0;
+}
+
+#footer small {
+    font-size: 14px;
+    display: block;
+}
+
+.icon span.ico:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    clear: both;
+}
+
+.icon.home span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -5px center;
+    height: 50px;
+}
+
+.icon.phone span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -65px center;
+}
+
+.icon.mail span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -115px center;
+}
+
+.icon.down span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -160px center;
+    width: 60px;
+}
+
+.icon.payu span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -216px center;
+    width: 60px;
+}
+
+.icon.right span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -270px center;
+    width: 60px;
+}
+
+.icon.cod span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -5px center;
+    width: 60px;
+}
+
+.icon.poczta span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -324px center;
+    width: 110px;
+}
+
+.icon.poczta small {
+    display: block;
+    clear: left;
+    float: left;
+    margin-left: 120px;
+}
+
+.icon.paczka24 span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -385px center;
+    width: 110px;
+    height: 60px;
+}
+
+.icon.dpd span.ico:before {
+    background: url('images/icons_sprite.jpg') no-repeat top -456px center;
+    width: 110px;
+    height: 70px;
+}
+
+.icon.dpd small {
+    display: block;
+    clear: right;
+    text-align: left;
+}
+
+
+.text.dane {
+    background: url('images/footer_sprite.jpg') no-repeat top -5px left 50px;
+    width: 100%;
+    height: 30px;
+}
+
+.text.platnosci {
+    background: url('images/footer_sprite.jpg') no-repeat top -35px left 65px;
+    width: 100%;
+    height: 30px;
+}
+
+.text.przesylka {
+    background: url('images/footer_sprite.jpg') no-repeat top -65px left 118px;
+    width: 100%;
+    height: 30px;
+}
