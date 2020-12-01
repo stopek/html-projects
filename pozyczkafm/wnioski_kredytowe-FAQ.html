@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pl" xml:lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Wnioski Kredytowe</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-type"/>
+    <meta content="" name="Description"/>
+    <meta content="" name="Keywords"/>
+    <meta content="Author Name" name="Author"/>
+    <meta content="index, follow" name="Robots"/>
+    <meta content="index, follow" name="Googlebot"/>
+    <meta content="&copy; 2014 Author Name" name="COPYRIGHT">
+    <link href="/themes/default/icon.ico" rel="Shortcut icon"/>
+
+    <!-- general scripts -->
+    <script src="jquery-1.7.min.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Signika:300,700,400&subset=latin-ext,latin' rel='stylesheet'
+          type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <!--[if IE]>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=family=Signika:400"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=family=Signika:700"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=family=Signika:300"/>
+    <![endif]-->
+    <script type="text/javascript">
+        $(function () {
+
+            $("div#block_faq ul li h1").unbind('click').bind('click', function () {
+                jQuery(this).parent().parent().find('p').slideUp();
+                jQuery(this).parent().parent().parent().find('li').removeClass('active');
+
+                if (!jQuery(this).parent().find('p').filter(":visible").length) {
+                    jQuery(this).parent().find('p').slideToggle(function () {
+
+                        jQuery(this).parent().addClass('active');
+                    });
+                }
+            });
+            $("#block_faq ul li.active p").slideDown();
+        });
+
+    </script>
+</head>
+<body>
+<div id="site">
+    <div class="small" id="content_top">
+        <div id="top">
+            <div class="border-radius-13" id="top_menu">
+                <div id="logo"><a href="#"></a></div>
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="wnioski_kredytowe-wymogi.html">Wymogi</a></li>
+                    <li class="active"><a href="wnioski_kredytowe-FAQ.html">FAQ</a></li>
+                    <li><a href="wnioski_kredytowe-pozyczka.html">Jak mogę uzyskać pożyczkę</a></li>
+                    <li><a href="wnioski_kredytowe-kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="content_page">
+        <div id="page">
+            <!-- block faq -->
+            <div id="block_faq">
+                <h1 id="faq_questions">FAQ czyli pytania i odpowiedzi dla pożyczkobiorców</h1>
+                <ul>
+                    <li class="active"><h1 class="border-radius-13">Czym jest pozyczka.fm?</h1>
+                        <p><strong>Pozyczka.fm to internetowa platforma,</strong> za pośrednictwem której inwestorzy
+                            mogą sfinansować projekty pożyczkowe pożyczkobiorców.
+                            Stanowi alternatywę dla pożyczek bankowych i pozabankowych, oferując finansowanie na
+                            korzystnych warunkach. <br/> <br/>
+                            <strong class="styleblue">Jak to działa?</strong> Pożyczkobiorcy określają ile pieniędzy
+                            potrzebują, przedstawiając projekt. Inwestorzy przeznaczają swoje środki na indywidualne
+                            projekty pożyczkowe. Pozyczka.fm w sposób bezpośredni pomaga „spotkać się” pożyczkobiorcom z
+                            inwestorami, dając możliwość na uzyskanie pożyczki na atrakcyjnych warunkach - bez ryzyka,
+                            niskim kosztem i przy minimum formalności.
+                        </p>
+                    </li>
+                    <li>
+                        <h1 class="border-radius-13">Czym są pożyczki społecznościowe?</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada eget eros eu
+                            sodales. Nullam vitae consequat orci. Aliquam ex augue, ornare eu pellentesque eu, lacinia
+                            non risus. In ut nisi purus. Nulla tincidunt sem quis metus eleifend, quis facilisis justo
+                            varius. Donec eu tortor ex. Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeos. Nam nulla odio, rhoncus non metus et, ornare porttitor
+                            tortor. Nullam ac imperdiet nunc. Aliquam erat volutpat. Maecenas lobortis, neque non porta
+                            accumsan, augue ligula tempor ante, non porta elit tellus condimentum tellus. Integer
+                            tristique lacus sed vestibulum tincidunt. </p>
+                    </li>
+                    <li>
+                        <h1 class="border-radius-13">Czym się różnią pożyczki oferowane za pośrednictwem platformy
+                            pozyczka.fm od standardowych pożyczek bankowych?</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada eget eros eu
+                            sodales. Nullam vitae consequat orci. Aliquam ex augue, ornare eu pellentesque eu, lacinia
+                            non risus. In ut nisi purus. Nulla tincidunt sem quis metus eleifend, quis facilisis justo
+                            varius. Donec eu tortor ex. Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeos. Nam nulla odio, rhoncus non metus et, ornare porttitor
+                            tortor. Nullam ac imperdiet nunc. Aliquam erat volutpat. Maecenas lobortis, neque non porta
+                            accumsan, augue ligula tempor ante, non porta elit tellus condimentum tellus. Integer
+                            tristique lacus sed vestibulum tincidunt. </p>
+                    </li>
+                    <li>
+                        <h1 class="border-radius-13">Jakie korzyści otrzymują pożyczkobiorcy?</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada eget eros eu
+                            sodales. Nullam vitae consequat orci. Aliquam ex augue, ornare eu pellentesque eu, lacinia
+                            non risus. In ut nisi purus. Nulla tincidunt sem quis metus eleifend, quis facilisis justo
+                            varius. Donec eu tortor ex. Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeos. Nam nulla odio, rhoncus non metus et, ornare porttitor
+                            tortor. Nullam ac imperdiet nunc. Aliquam erat volutpat. Maecenas lobortis, neque non porta
+                            accumsan, augue ligula tempor ante, non porta elit tellus condimentum tellus. Integer
+                            tristique lacus sed vestibulum tincidunt. </p>
+                    </li>
+                    <li><h1 class="border-radius-13">Kto finansuje pożyczkę?</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada eget eros eu
+                            sodales. Nullam vitae consequat orci. Aliquam ex augue, ornare eu pellentesque eu, lacinia
+                            non risus. In ut nisi purus. Nulla tincidunt sem quis metus eleifend, quis facilisis justo
+                            varius. Donec eu tortor ex. Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeos. Nam nulla odio, rhoncus non metus et, ornare porttitor
+                            tortor. Nullam ac imperdiet nunc. Aliquam erat volutpat. Maecenas lobortis, neque non porta
+                            accumsan, augue ligula tempor ante, non porta elit tellus condimentum tellus. Integer
+                            tristique lacus sed vestibulum tincidunt. </p>
+                    </li>
+                    <li><h1 class="border-radius-13">Ile kosztuje pożyczka?</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada eget eros eu
+                            sodales. Nullam vitae consequat orci. Aliquam ex augue, ornare eu pellentesque eu, lacinia
+                            non risus. In ut nisi purus. Nulla tincidunt sem quis metus eleifend, quis facilisis justo
+                            varius. Donec eu tortor ex. Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeos. Nam nulla odio, rhoncus non metus et, ornare porttitor
+                            tortor. Nullam ac imperdiet nunc. Aliquam erat volutpat. Maecenas lobortis, neque non porta
+                            accumsan, augue ligula tempor ante, non porta elit tellus condimentum tellus. Integer
+                            tristique lacus sed vestibulum tincidunt. </p>
+                    </li>
+                    <li><h1 class="border-radius-13">Jak mogę uzyskać pożyczkę?</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada eget eros eu
+                            sodales. Nullam vitae consequat orci. Aliquam ex augue, ornare eu pellentesque eu, lacinia
+                            non risus. In ut nisi purus. Nulla tincidunt sem quis metus eleifend, quis facilisis justo
+                            varius. Donec eu tortor ex. Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeos. Nam nulla odio, rhoncus non metus et, ornare porttitor
+                            tortor. Nullam ac imperdiet nunc. Aliquam erat volutpat. Maecenas lobortis, neque non porta
+                            accumsan, augue ligula tempor ante, non porta elit tellus condimentum tellus. Integer
+                            tristique lacus sed vestibulum tincidunt. </p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- block comments -->
+            <div class="border-radius-13" id="block_comments">
+                <h2>Komentarze:</h2>
+
+                <ul>
+                    <li>
+                        <span class="author styleblue strong">Anna</span>
+                        <span class="date strong">2014-08-12  17:32</span>
+                        <span class="message">Długo szukałem takiej firmy, która załatwi za mnie praktycznie wszystko. Wystarczyło, że wypełniłem formularz kontaktowy, a oni załatwili całą resztę. Sami przeczesali wszystkie oferty na rynku i zaproponowali tą, która była najbliższa moim oczekiwaniom. </span>
+                    </li>
+                    <li>
+                        <span class="author styleblue strong">Paweł</span>
+                        <span class="date strong">2014-08-12  17:32</span>
+                        <span class="message">Długo szukałem takiej firmy, która załatwi za mnie praktycznie wszystko. Wystarczyło, że wypełniłem formularz kontaktowy, a oni załatwili całą resztę. Sami przeczesali wszystkie oferty na rynku i zaproponowali tą, która była najbliższa moim oczekiwaniom. </span>
+                    </li>
+                    <li>
+                        <span class="author styleblue strong">Tomek</span>
+                        <span class="date strong">2014-08-12  17:32</span>
+                        <span class="message">Długo szukałem takiej firmy, która załatwi za mnie praktycznie wszystko. Wystarczyło, że wypełniłem formularz kontaktowy, a oni załatwili całą resztę.  </span>
+                    </li>
+                    <li>
+                        <span class="author styleblue strong">Bartek</span>
+                        <span class="date strong">2014-08-12  17:32</span>
+                        <span class="message">Długo szukałem takiej firmy, która załatwi za mnie praktycznie wszystko. Wystarczyło, że wypełniłem formularz kontaktowy, a oni załatwili całą resztę.  </span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- block footer -->
+            <div id="footer">
+                <ul>
+                    <li><a href="index.html">@2014 pozyczka.fm</a></li>
+                    <li><a href="wnioski_kredytowe-01-weryfikacja.html">weryfikacja </a></li>
+                    <li>|</li>
+                    <li><a href="wnioski_kredytowe-02-niepowodzenie.html">niepowodzenie</a></li>
+                    <li>|</li>
+                    <li><a href="wnioski_kredytowe-03-pozytywna.html">powodzenie</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

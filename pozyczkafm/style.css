@@ -1,0 +1,1047 @@
+/* Reset CSS
+   ------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, input, textarea, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, head {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+div {
+    display: block;
+}
+
+* {
+    font-smooth: always;
+
+    font-family: 'Signika', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: transparent;
+}
+
+strong, .strong {
+    font-weight: bolder;
+    color: #333333;
+}
+
+
+.styled-select select {
+    background: transparent;
+
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+
+    cursor: pointer;
+    font-family: 'Signika', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 431px;
+    height: 48px;
+    background: url(images/select_bg.jpg) no-repeat green;
+
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+
+}
+
+.styled-select select option {
+    background: #4d9902;
+}
+
+
+/**
+ * formtowanie dla selectu z kalkulatora
+ */
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+:focus {
+    outline: 0;
+}
+
+/** 
+ * global class
+ */
+.border-radius-13 {
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -khtml-border-radius: 13px;
+    border-radius: 13px;
+    behavior: url(border-radius.htc);
+}
+
+.border-radius-10 {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(border-radius.htc);
+}
+
+.border-radius-27 {
+    -moz-border-radius: 27px;
+    -webkit-border-radius: 27px;
+    -khtml-border-radius: 27px;
+    border-radius: 27px;
+    behavior: url(border-radius.htc);
+}
+
+.styleblue {
+    color: #497ec6 !important;
+}
+
+.style_font_01 {
+    color: #333333;
+    font-weight: 300;
+    font-size: 26px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+.additional_padding_20 {
+    padding: 20px 0;
+}
+
+/**
+ * let's start bro.
+ */
+div#site {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+/**
+ * ogolnie uzywany jako naglowkowy
+ */
+div#site div#content_page div#page h1#faq_questions {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Signika', sans-serif;
+    color: #333333;
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+/**
+ * ustawienia roznych dla roznego rodzaju top
+ */
+div#site div#content_top.small {
+    background: url('images/topsmall.jpg') no-repeat center center;
+    height: 272px;
+}
+
+/**
+ * ustawienia dla topu bez tla (same menu)
+ */
+div#site div#content_top.onlymenu {
+    background: #4f9b03;
+    height: 110px;
+}
+
+
+/**
+ * ustawienia dla roznego rodzaju powiadomien
+ */
+div#site div#content_page div#page div#block_notify {
+    padding: 100px;
+    color: #333333;
+}
+
+div#site div#content_page div#page div#block_notify ul#notify {
+    display: table;
+    margin: auto;
+}
+
+div#site div#content_page div#page div#block_notify h1 {
+    text-align: center;
+    font-size: 35px;
+    display: table;
+    margin: auto;
+    margin-top: 50px;
+}
+
+div#site div#content_page div#page div#block_notify h2 {
+    text-align: center;
+    font-size: 22px;
+    display: table;
+    margin: auto;
+}
+
+div#site div#content_page div#page div#block_notify ul#notify li {
+    width: 157px;
+    height: 157px;
+}
+
+div#site div#content_page div#page div#block_notify ul#notify li.icon_08 {
+    background: url('images/icon_08.jpg') no-repeat center center;
+}
+
+div#site div#content_page div#page div#block_notify ul#notify li.icon_09 {
+    background: url('images/icon_09.jpg') no-repeat center center;
+}
+
+div#site div#content_page div#page div#block_notify ul#notify li.icon_10 {
+    background: url('images/icon_10.jpg') no-repeat center center;
+}
+
+
+/**
+ * ustawienia dla bloku "kontakt"
+ */
+div#site div#content_page div#page div#block_guidelines {
+}
+
+div#site div#content_page div#page div#block_guidelines h2,
+div#site div#content_page div#page .additional_title {
+    padding: 10px 100px 0 100px;
+    text-align: center;
+    color: #333333;
+    font-weight: 300;
+    font-size: 26px;
+    font-family: 'Signika', sans-serif;
+}
+
+div#site div#content_page div#page .additional_title {
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+div#site div#content_page div#page div#block_guidelines ul#guidelines {
+    margin-top: 30px;
+    display: table;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid #f6f6f6;
+}
+
+div#site div#content_page div#page div#block_guidelines ul#guidelines li {
+    float: left;
+    width: 330px;
+    height: 300px;
+    color: #89898a;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 19px;
+    font-family: 'Signika', sans-serif;
+}
+
+div#site div#content_page div#page div#block_guidelines ul#guidelines li.icon_06 {
+    background: url('images/icon_06.jpg') no-repeat center center;
+    margin-right: 40px;
+}
+
+div#site div#content_page div#page div#block_guidelines ul#guidelines li.icon_07 {
+    background: url('images/icon_07.jpg') no-repeat center center;
+    margin-left: 40px;
+}
+
+div#site div#content_page div#page div#block_guidelines div#listof {
+    display: table;
+    color: #333333;
+    font: 14pt Arial, Helvetica, sans-serif;
+    margin: 60px auto 100px auto;
+}
+
+div#site div#content_page div#page div#block_guidelines div#listof div#listofleft {
+    float: left;
+    width: 500px;
+}
+
+div#site div#content_page div#page div#block_guidelines div#listof div#listofright {
+    float: left;
+    width: 500px;
+}
+
+div#site div#content_page div#page div#block_guidelines div#listof div ul {
+    list-style-type: disc;
+}
+
+div#site div#content_page div#page div#block_guidelines div#listof div ul li {
+    margin-top: 10px;
+}
+
+
+/**
+ * ustawienia dla bloku "kontakt"
+ */
+div#site div#content_page div#page div#contact {
+
+    height: 300px;
+    display: table;
+}
+
+div#site div#content_page div#page div#contact h2.request_title {
+    font-size: 30px;
+    margin-left: 20px;
+    color: #333333;
+}
+
+div#site div#content_page div#page div#contact div#contact_box {
+    background: url('images/icon_05.jpg') no-repeat 100px 30px;
+    height: 300px;
+    display: inline-table;
+    width: 500px;
+}
+
+div#site div#content_page div#page div#contact div#contact_box ul {
+    margin: 35px 0 0 280px;
+    color: #7c7c7c;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Signika', sans-serif;
+}
+
+div#site div#content_page div#page div#contact div#contact_box ul li {
+    margin-top: 10px;
+}
+
+div#site div#content_page div#page div#contact_form {
+    float: right;
+    width: 600px;
+    height: 300px;
+    color: #333333;
+    display: table;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Signika', sans-serif;
+}
+
+div#site div#content_page div#page div#contact_form ul li {
+    margin: 20px;
+    font-weight: 100;
+    font-size: 19px;
+    display: table;
+    width: 600px;
+}
+
+div#site div#content_page div#page div#contact_form ul li span {
+    padding-top: 10px;
+    display: block;
+    float: left;
+    font-weight: 300;
+    font-family: 'Signika', sans-serif;
+}
+
+div#site div#content_page div#page div#contact_form ul li input,
+div#site div#content_page div#page div#contact_form ul li textarea {
+    background: #f0f0f0;
+    width: 433px;
+    height: 25px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -khtml-border-radius: 13px;
+    border-radius: 13px;
+    behavior: url(border-radius.htc);
+    float: right;
+    moz-box-shadow: inset 0 5px 3px #d5d5d5;
+    -webkit-box-shadow: inset 0 5px 3px #d5d5d5;
+    padding: 10px;
+    box-shadow: inset 0 5px 3px #d5d5d5;
+}
+
+div#site div#content_page div#page div#contact_form ul li textarea {
+    height: 90px;
+    resize: none;
+}
+
+div#site div#content_page div#page div#contact_form input[type=submit] {
+    padding: 10px 60px;
+    background: #417abe;
+    color: white;
+    font-size: 22px;
+    -moz-border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -khtml-border-radius: 23px;
+    cursor: pointer;
+    margin-left: 160px;
+    font-weight: 100;
+}
+
+/**
+ * ustawienia bloku "jak uzyskac pozyczke"
+ */
+div#site div#content_page div#page div#block_how_get {
+    margin-bottom: 100px;
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+div#site div#content_page div#page div#block_how_get ul li {
+    height: 126px;
+    padding-left: 222px;
+    color: #8c8c8c;
+    background: blue;
+    margin: 20px 0;
+}
+
+div#site div#content_page div#page div#block_how_get ul li h1 {
+    padding-top: 50px;
+}
+
+div#site div#content_page div#page div#block_how_get ul li.icon_01 {
+    background: url('images/icon_01.jpg') no-repeat 40px center;
+}
+
+div#site div#content_page div#page div#block_how_get ul li.icon_02 {
+    background: url('images/icon_02.jpg') no-repeat 40px center;
+}
+
+div#site div#content_page div#page div#block_how_get ul li.icon_03 {
+    background: url('images/icon_03.jpg') no-repeat 40px center;
+}
+
+div#site div#content_page div#page div#block_how_get ul li.icon_04 {
+    background: url('images/icon_04.jpg') no-repeat 40px center;
+}
+
+/**
+ * ustawienia dla bloku z komentarzami
+ */
+div#site div#content_page div#page div#block_comments {
+    width: 207px;
+    float: right;
+    height: auto;
+    margin: 40px 0 30px 0;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    margin-right: 20px;
+}
+
+div#site div#content_page div#page div#block_comments h2 {
+    background: url('images/comments_icon.gif') no-repeat left 10px center;
+    padding-top: 5px;
+    min-height: 32px;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    color: #529f03;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+div#site div#content_page div#page div#block_comments ul li {
+    border-bottom: 2px solid #f0f0f0;
+    padding: 10px 0;
+}
+
+div#site div#content_page div#page div#block_comments ul li span {
+    clear: both;
+    display: block;
+}
+
+div#site div#content_page div#page div#block_comments ul li span.author {
+    font-size: 22px;
+}
+
+div#site div#content_page div#page div#block_comments ul li span.date {
+    font-size: 13px;
+    color: black;
+}
+
+div#site div#content_page div#page div#block_comments ul li span.message {
+    padding-top: 15px;
+    color: #6d6d6d;
+    font-style: italic;
+    font-weight: 300;
+}
+
+div#site div#content_page div#page div#block_comments ul li:last-child {
+    border-bottom: 2px solid transparent;
+}
+
+/**
+ * ustawinia dla bloku faq
+ */
+div#site div#content_page div#page div#block_faq {
+    width: calc(100% - 300px);
+    margin-bottom: 70px;
+    float: left;
+}
+
+div#site div#content_page div#page div#block_faq ul li {
+    clear: both;
+    margin-bottom: 23px;
+}
+
+div#site div#content_page div#page div#block_faq ul li h1 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;
+    padding: 10px 0 10px 50px;
+    cursor: pointer;
+    -moz-box-shadow: inset 0 2px 5px #515151;
+    -webkit-box-shadow: inset 0 2px 5px #515151;
+    box-shadow: inset 0 2px 5px #515151;
+    background: #66a935 url('images/faq_noactive.gif') no-repeat left 20px center;
+}
+
+div#site div#content_page div#page div#block_faq ul li.active h1 {
+    background: #6291d1 url('images/faq_active.gif') no-repeat left 20px center;
+}
+
+div#site div#content_page div#page div#block_faq ul li p {
+    display: none;
+    text-align: justify;
+    padding: 20px;
+    color: #333333;
+    line-height: 23px;
+    height: 150px;
+}
+
+div#site div#content_page div#page div#block_faq ul li.active p {
+    v
+}
+
+/**
+ * ustawienia duzego topu
+ */
+div#site div#content_top {
+    background: #509c04 url('images/top.jpg') no-repeat center center;
+    height: 656px;
+}
+
+div#site div#content_top.empty {
+    background: #509c04 url('images/empty_top.jpg') no-repeat center center;
+    height: 656px;
+}
+
+div#site div#content_top div#top {
+    height: 657px;
+    margin: auto;
+    width: 1300px;
+}
+
+div#site div#content_top div#top div#top_menu {
+    box-shadow: 1px 1px 2px #575757;
+    -moz-box-shadow: 1px 1px 2px #575757;
+    -webkit-box-shadow: 1px 1px 2px #575757;
+    height: 52px;
+    width: 100%;
+    background: url('images/menu_bg.gif') center center repeat-x;
+    margin: 10px 0;
+    display: inline-table;
+}
+
+div#site div#content_top div#top div#top_menu div#logo {
+    height: 52px;
+    width: 220px;
+    float: left;
+    background: url('images/logo.png') no-repeat 30px center;
+}
+
+div#site div#content_top div#top div#top_menu div#logo a {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+div#site div#content_top div#top div#top_menu ul {
+    float: right;
+    margin-right: 30px;
+}
+
+div#site div#content_top div#top div#top_menu ul li {
+    float: left;
+    display: block;
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    height: 21px;
+    margin-top: 14px;
+    padding: 0px 20px;
+    border-right: 1px solid #d8d8d8;
+}
+
+div#site div#content_top div#top div#top_menu ul li.active a {
+    color: #3077ca !important;
+}
+
+div#site div#content_top div#top div#top_menu ul li:last-child {
+    border-right: 1px solid transparent;
+}
+
+div#site div#content_top div#top div#top_menu ul li a {
+    text-decoration: none;
+    color: #808080;
+}
+
+/**
+ * ustawienia dla sloganu [duzy top]
+ */
+div#site div#content_top div#top div#slogan {
+    display: inline-table;
+    margin-top: 20px;
+}
+
+div#site div#content_top div#top div#slogan h1,
+div#site div#content_top div#top div#slogan h2 {
+    font-family: 'Signika', sans-serif;
+    font-size: 58px;
+    color: white;
+    margin-left: 15px;
+    font-weight: 600;
+
+}
+
+div#site div#content_top div#top div#slogan h2 {
+    font-size: 37px;
+    font-weight: 200;
+}
+
+div#site div#content_top div#top div#slogan ul {
+    margin: 20px 0 0 34px;
+}
+
+div#site div#content_top div#top div#slogan ul li {
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    padding: 5px 0 0 30px;
+    text-shadow: 1px 1px 3px #797979;
+    font-weight: 200;
+    background: url('images/list.gif') no-repeat left center;
+    color: white;
+}
+
+div#site div#content_page {
+    height: auto;
+}
+
+div#site div#content_page div#page {
+    height: auto;
+    width: 1260px;
+    margin: auto;
+    padding: 30px;
+    display: table;
+}
+
+/**
+ * ustawienia dla bloku 'lista kroków'
+ */
+div#site div#content_page div#page div#steps {
+    display: table;
+    margin: auto;
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    border-bottom: 2px solid #f6f6f6;
+}
+
+div#site div#content_page div#page div#steps h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Signika', sans-serif;
+}
+
+div#site div#content_page div#page div#steps h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+div#site div#content_page div#page div#steps div.step {
+    float: left;
+    height: 365px;
+    width: 256px;
+    background: white;
+}
+
+div#site div#content_page div#page div#steps div.step.arrow_up {
+    width: 56px;
+    background: url('images/arrow_up.jpg') no-repeat center 100px;
+}
+
+div#site div#content_page div#page div#steps div.step.arrow_down {
+    width: 56px;
+    background: url('images/arrow_down.jpg') no-repeat center 100px;
+}
+
+div#site div#content_page div#page div#steps div.step ul {
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+div#site div#content_page div#page div#steps div.step li.step_no {
+    color: #999da3;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+div#site div#content_page div#page div#steps div.step li.step_no strong {
+    color: #4d7fcd;
+    font-size: 30px;
+}
+
+div#site div#content_page div#page div#steps div.step li.step_title {
+    color: #333333;
+    font-size: 27px;
+    margin-top: 200px;
+}
+
+div#site div#content_page div#page div#steps div.step li.step_description {
+    color: #818384;
+}
+
+div#site div#content_page div#page div#steps div.step ul#step_01 {
+    background: url('images/step_01.jpg') no-repeat center 40px;
+}
+
+div#site div#content_page div#page div#steps div.step ul#step_02 {
+    background: url('images/step_02.jpg') no-repeat center 40px;
+}
+
+div#site div#content_page div#page div#steps div.step ul#step_03 {
+    background: url('images/step_03.jpg') no-repeat center 40px;
+}
+
+div#site div#content_page div#page div#steps div.step ul#step_04 {
+    background: url('images/step_04.jpg') no-repeat center 40px;
+}
+
+/**
+ * ustawienia dla bloku fm (pozyczki fm dla kazdego!)
+ */
+div#site div#content_page div#page div#block_fm {
+    width: 100%;
+    height: auto;
+    font-family: 'Signika', sans-serif;
+    height: 445px;
+    background: url('images/fm_block_bg.jpg') no-repeat left center;
+    border-bottom: 2px solid #f6f6f6;
+    margin-top: 50px;
+}
+
+div#site div#content_page div#page div#block_fm_content {
+    width: 600px;
+    height: 100%;
+    float: right;
+    display: table;
+}
+
+div#site div#content_page div#page div#block_fm_content h1 {
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: 700;
+    color: #333333;
+}
+
+div#site div#content_page div#page div#block_fm_content h2 {
+    font-size: 30px;
+    color: #494949;
+    font-weight: 300;
+}
+
+div#site div#content_page div#page div#block_fm_content ul {
+    margin-top: 30px;
+}
+
+div#site div#content_page div#page div#block_fm_content ul h3 {
+    font-size: 17px;
+    color: #494949;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+div#site div#content_page div#page div#block_fm_content ul p {
+    font-size: 17px;
+    font-weight: 300;
+    padding-top: 10px;
+    display: none;
+    height: 220px;
+}
+
+div#site div#content_page div#page div#block_fm_content ul li p strong {
+    font-weight: bolder;
+}
+
+div#site div#content_page div#page div#block_fm_content ul li {
+    padding-left: 20px;
+    cursor: pointer;
+    color: #333333;
+    background: url('images/fm_block_noactive.jpg') no-repeat 0px 5px;
+}
+
+div#site div#content_page div#page div#block_fm_content ul li.active {
+    background: url('images/fm_block_active.jpg') no-repeat 0px 5px;
+}
+
+div#site div#content_page div#page div#block_fm_content ul li.active h3 {
+    color: #4285bc;
+}
+
+div#site div#content_page div#page div#block_fm_content ul li.active p {
+    display: block;
+}
+
+/**
+* ustawienia dla stopki
+*/
+div#site div#content_page div#footer {
+    color: #9f9f9f;
+    font: 14px Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-top: 10px;
+    clear: both;
+}
+
+div#site div#content_page div#footer ul li {
+    float: left;
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 20px;
+}
+
+div#site div#content_page div#footer ul li:first-child {
+    padding-right: 20px;
+}
+
+div#site div#content_page div#footer ul li a {
+    color: #bbbbbb;
+}
+
+/**
+* ustawienia dla kalkulatora [duzy top]
+*/
+div#site div#content_top div#top div#calculator {
+    float: right;
+    width: 530px;
+    height: 584px;
+}
+
+div#site div#content_top div#top div#calculator h1,
+div#site div#content_top div#top div#calculator_more h1 {
+    margin-top: 20px;
+    color: white;
+    display: block;
+    background: url('images/percent_img.jpg') no-repeat left center;
+    padding-left: 55px;
+    height: 42px;
+    padding-top: 10px;
+    font-size: 27px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+div#site div#content_top div#top div#calculator_more h1 {
+    background: url('images/calculator_list_icon_title.jpg') no-repeat left center;
+}
+
+div#site div#content_top div#top div#calculator ul#calc_right {
+    display: table;
+    margin-left: 15px;
+}
+
+div#site div#content_top div#top div#calculator ul#calc_right > li {
+    clear: both;
+}
+
+div#site div#content_top div#top div#calculator ul#calc_right li.title {
+    font-family: 'Signika', sans-serif;
+    color: white;
+    font-size: 22px;
+    clear: both;
+    margin: 30px 10px 10px 10px;
+}
+
+div#site div#content_top div#top div#calculator ul#calc_right li.legend {
+
+}
+
+div#site div#content_top div#top div#calculator ul#calc_right li.select_range {
+    clear: both;
+    display: table;
+}
+
+div#site div#content_top div#top div#calculator ul#calc_right li.select_range div {
+    float: left;
+    margin: 20px 0;
+    width: 300px;
+}
+
+div#site div#content_top div#top div#calculator ul#calc_right li.select_range input {
+    float: right;
+    width: 86px;
+    height: 28px;
+    background: url('images/calculator_input_bg.jpg') no-repeat;
+    margin-left: 10px;
+    font-family: 'Signika', sans-serif;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+div#site div#content_top div#top div#calculator ul#calc_right li.legend li {
+    float: left;
+    display: table;
+    padding: 0 20px;
+}
+
+div#site div#content_top div#top .runbutton {
+    width: 189px;
+    height: 51px;
+    background: white;
+    text-align: center;
+    box-shadow: 1px 1px 2px #333333;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+div#site div#content_top div#top div#calculator_more {
+    float: left;
+    width: 55%;
+    display: table;
+    margin-left: 20px;
+}
+
+div#site div#content_top div#top div#calculator_more ul li#credit {
+    background: #78b913;
+    color: #1c3501;
+    padding: 6px 3px;
+}
+
+div#site div#content_top div#top div#calculator_more ul li#result {
+    font-size: 28px;
+    padding: 30px 0;
+}
+
+div#site div#content_top div#top div#calculator_more ul li#result h2 {
+    padding-top: 10px;
+    float: left;
+}
+
+div#site div#content_top div#top div#calculator_more ul li#result input {
+    width: 175px;
+    height: 55px;
+    background: #4784ce;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    -moz-box-shadow: inset 0 2px 5px #3767a1;
+    -webkit-box-shadow: inset 0 2px 5px #3767a1;
+    box-shadow: inset 0 2px 5px #3767a1;
+}
+
+div#site div#content_top div#top div#calculator_more ul li {
+    clear: both;
+    color: white;
+    font-size: 16px;
+    display: table;
+    padding: 3px;
+    font-family: 'Signika', sans-serif;
+    border-bottom: 1px solid #4d9209;
+    width: 100%;
+}
+
+div#site div#content_top div#top div#calculator_more ul li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+div#site div#content_top div#top div#calculator_more ul li span {
+    float: right;
+}
+
+div#site div#content_top div#top div#calculator_more ul li small {
+    font-weight: 100;
+    font-size: 12px;
+    font-style: italic;
+    padding: 5px 0;
+}
+
+div#site div#content_top div#top div#calculator_more ul li input.result {
+    width: 80px;
+    height: 33px;
+    text-align: center;
+    font: white !important;
+    background: url('images/result_input_bg.jpg') no-repeat;
+}
+
+div#site div#content_top div#top div#calculator_more ul li > div {
+    clear: both;
+    margin-top: 10px;
+}
+
+div#site div#content_top div#top div#calculator_more ul li div div {
+    width: 435px;
+    margin: 10px 10px 0 10px;
+}
+
+div#site div#content_page div#page div#request_block {
+    margin-top: 50px;
+}
+
+div#site div#content_page div#page div#request_box {
+    float: left;
+    width: 400px;
+    margin-right: 200px;
+}
+
+div#site div#content_page div#page div#request_box ul {
+    margin: 20px;
+}
+
+div#site div#content_page div#page div#request_box ul li {
+    padding: 4px;
+    color: #505050;
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+div#site div#content_page div#page div#request_box ul li span {
+    float: right;
+    color: #333333;
+    font-weight: 700;
+}
