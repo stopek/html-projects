@@ -1,0 +1,78 @@
+/* -------------
+ * Selects
+ * ------------- */
+.jqTransformSelectWrapper {
+    width: 431px !important;
+    height: 49px;
+    position: relative;
+    background: url(img/select_bg.jpg) no-repeat top left;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    float: left;
+    padding: 10px 0 0 10px;
+    font-size: 20px;
+}
+
+.jqTransformSelectWrapper div span {
+
+    float: none;
+    position: absolute;
+    white-space: nowrap;
+    line-height: 15px;
+    padding: 8px 0 0 7px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    /*border: 1px solid #CCCCCC;*/
+    /*	border-right: none;*/
+}
+
+.jqTransformSelectWrapper a.jqTransformSelectOpen {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 49px;
+    height: 49px;
+
+}
+
+.jqTransformSelectWrapper ul {
+    position: absolute;
+    width: 43px;
+    top: 49px;
+    left: 0px;
+    list-style: none;
+    background: #559e07;
+    border: solid 1px #78a507;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.jqTransformSelectWrapper ul a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+}
+
+.jqTransformSelectWrapper ul a.selected {
+    background: #88b811;
+}
+
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+    background: #88b811;
+}
+
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {
+    display: none;
+}
