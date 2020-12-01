@@ -1,0 +1,316 @@
+/* ==========================================================================
+   =Tables
+   ========================================================================== */
+
+table,
+th,
+td {
+    border: 1px solid #e6e6e6;
+}
+
+/**
+ * 1. Prevents HTML tables from becoming too wide
+ */
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+
+caption {
+    margin-bottom: 20px;
+}
+
+th {
+    border-width: 0 1px 1px 0;
+    font-weight: 700;
+}
+
+td {
+    border-width: 0 1px 1px 0;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+@media (max-width: 480px) {
+
+    /**
+     * Force table to not be like tables anymore
+     */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /**
+     * Hide table headers
+     */
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+    }
+
+    td:first-child {
+        border-top: none !important;
+    }
+
+}
+
+/* ==========================================================================
+   =Forms
+   ========================================================================== */
+
+form {
+}
+
+fieldset {
+}
+
+fieldset legend {
+    padding: 0 10px;
+    margin: 0;
+    margin-left: -2px;
+    background: #fff;
+    font-weight: 700;
+}
+
+::-moz-placeholder,
+::-webkit-input-placeholder,
+:-ms-input-placeholder {
+    color: #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+    display: block;
+    max-width: 100%;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    border-color: #bbb;
+    outline: none;
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="date"]:disabled,
+input[type="datetime"]:disabled,
+input[type="datetime-local"]:disabled,
+input[type="month"]:disabled,
+input[type="week"]:disabled,
+input[type="email"]:disabled,
+input[type="number"]:disabled,
+input[type="search"]:disabled,
+input[type="tel"]:disabled,
+input[type="time"]:disabled,
+input[type="url"]:disabled,
+input[type="color"]:disabled,
+textarea:disabled {
+    background-color: #f3f3f3;
+    cursor: not-allowed;
+}
+
+input[type="text"][disabled],
+input[type="text"][readonly],
+fieldset[disabled] input[type="text"],
+input[type="password"][disabled],
+input[type="password"][readonly],
+fieldset[disabled] input[type="password"],
+input[type="date"][disabled],
+input[type="date"][readonly],
+fieldset[disabled] input[type="date"],
+input[type="datetime"][disabled],
+input[type="datetime"][readonly],
+fieldset[disabled] input[type="datetime"],
+input[type="datetime-local"][disabled],
+input[type="datetime-local"][readonly],
+fieldset[disabled] input[type="datetime-local"],
+input[type="month"][disabled],
+input[type="month"][readonly],
+fieldset[disabled] input[type="month"],
+input[type="week"][disabled],
+input[type="week"][readonly],
+fieldset[disabled] input[type="week"],
+input[type="email"][disabled],
+input[type="email"][readonly],
+fieldset[disabled] input[type="email"],
+input[type="number"][disabled],
+input[type="number"][readonly],
+fieldset[disabled] input[type="number"],
+input[type="search"][disabled],
+input[type="search"][readonly],
+fieldset[disabled] input[type="search"],
+input[type="tel"][disabled],
+input[type="tel"][readonly],
+fieldset[disabled] input[type="tel"],
+input[type="time"][disabled],
+input[type="time"][readonly],
+fieldset[disabled] input[type="time"],
+input[type="url"][disabled],
+input[type="url"][readonly],
+fieldset[disabled] input[type="url"],
+input[type="color"][disabled],
+input[type="color"][readonly],
+fieldset[disabled] input[type="color"],
+textarea[disabled],
+textarea[readonly],
+fieldset[disabled] textarea {
+    background-color: #f3f3f3;
+    cursor: not-allowed;
+}
+
+textarea[rows] {
+    height: auto;
+}
+
+select {
+    height: 40px;
+    max-width: 100%;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    -webkit-appearance: none !important;
+}
+
+select:disabled {
+    background-color: #f3f3f3;
+    cursor: not-allowed;
+}
+
+select:focus {
+    border-color: #bbb;
+}
+
+select[multiple] {
+    height: auto;
+}
+
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+    margin: 0 0 10px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    vertical-align: baseline;
+}
+
+input[type="file"] {
+    width: 100%;
+}
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+    position: relative;
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+/* =Responsive Form Inputs
+   ========================================================================== */
+
+/**
+ * 1. Reset float inherited from .span*
+  * 2. Change padding inherited from .span* with the one set in base.css for inputs
+  */
+
+button[class*="span"],
+input[type="reset"][class*="span"],
+input[type="submit"][class*="span"],
+input[type="button"][class*="span"],
+input[type="text"][class*="span"],
+input[type="password"][class*="span"],
+input[type="date"][class*="span"],
+input[type="datetime"][class*="span"],
+input[type="datetime-local"][class*="span"],
+input[type="month"][class*="span"],
+input[type="week"][class*="span"],
+input[type="email"][class*="span"],
+input[type="number"][class*="span"],
+input[type="search"][class*="span"],
+input[type="tel"][class*="span"],
+input[type="time"][class*="span"],
+input[type="url"][class*="span"],
+textarea[class*="span"],
+select[class*="span"] {
+    float: none; /* 1 */
+    padding: 10px 15px; /* 2 */
+}

@@ -1,0 +1,437 @@
+@charset "UTF-8";
+@import url("fonts.css");
+
+
+body, main, html {
+    color: #2c343b;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100%;
+
+}
+
+.content {
+    width: 890px;
+    height: auto;
+    display: table;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    background: url('../images/bg.jpg') no-repeat center center;
+    display: table;
+    height: 550px;
+}
+
+header .content {
+    background: url('../images/header_bg.jpg') no-repeat left 0px top 100px;
+
+    height: 550px;
+    font-family: 'fl';
+}
+
+header .container {
+    display: table;
+    width: 100%;
+}
+
+header #logo {
+    width: 458px;
+    height: 72px;
+    background: url('../images/logo.jpg') no-repeat center center;
+    margin: 70px 0 0 60px;
+}
+
+header #logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header #form {
+    float: right;
+    width: 240px;
+    background: #289f34; /* Old browsers */
+    background: -moz-linear-gradient(top, #289f34 0%, #16801f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #289f34), color-stop(100%, #16801f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #289f34 0%, #16801f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #289f34 0%, #16801f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #289f34 0%, #16801f 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #289f34 0%, #16801f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#289f34', endColorstr='#16801f', GradientType=0); /* IE6-9 */
+    padding: 20px 20px 0px 20px;
+    position: relative;
+}
+
+header #form h1,
+header #form h2 {
+    text-align: center;
+    color: white;
+    padding: 0px;
+    margin: 0;
+}
+
+header #form h1 {
+    font: 20px 'fl';
+}
+
+header #form h2 {
+    font: 20px 'fb';
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+header #form .input {
+    width: 96%;
+    padding: 10px 2%;
+    border: 0px solid transparent;
+    margin: 4px 0;
+    font: 14px 'fl';
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: black;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: black;
+}
+
+:-ms-input-placeholder {
+    color: black;
+}
+
+header #form .rulez {
+    font: 11px 'fl';
+    color: white;
+    display: table;
+    padding: 10px 0;
+}
+
+header #form .rulez input {
+    float: left;
+    width: 10%;
+}
+
+header #form .rulez p {
+    display: block;
+    float: right;
+    width: 86%;
+    color: #c6e2c9;
+}
+
+header #form .rulez p a {
+    color: white;
+    font-family: 'fb';
+}
+
+header #form .rulez p small {
+    display: block;
+    float: right;
+    clear: both;
+    padding-top: 10px;
+}
+
+header #form .submit {
+    text-align: center;
+}
+
+header #form input[type=submit] {
+    cursor: pointer;
+    width: 90%;
+    display: inline;
+    border: 0px solid transparent;
+    background: #ff0c00;
+    color: white;
+    font: 16px 'fb';
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-bottom: -13px;
+    margin-top: 20px;
+}
+
+header #form .rulez div.hcontent {
+    width: 240px;
+    background: white;
+    position: absolute;
+    border: 1px solid #ececec;
+    display: none;
+}
+
+header #form .rulez div.hcontent .close {
+    float: right;
+    font: 15px 'fb';
+    color: black !important;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+header #form .rulez div.hcontent p {
+    padding: 10px 0;
+    font: 13px 'fl';
+    color: black !important;
+}
+
+section#info {
+    width: 100%;
+    background: #289f34;
+    position: relative;
+}
+
+section#info .content {
+    padding: 0;
+}
+
+section#info .container {
+    font: 28px 'fl';
+    display: table;
+    padding: 30px 0;
+}
+
+section#info .container strong {
+    font-family: 'fb';
+}
+
+section#info p {
+    display: block;
+    float: left;
+    width: 70%;
+    color: white;
+}
+
+section#info p small {
+    clear: both;
+    display: block;
+    font-size: 18px;
+    font-family: 'fb';
+    padding-top: 10px;
+}
+
+section#info #prize {
+    width: 30%;
+    height: 226px;
+    float: right;
+    margin-top: -90px;
+    background: url('../images/prize.png') no-repeat center center;
+    z-index: 999;
+}
+
+section#cookie {
+    width: 100%;
+    background: #3e3d40;
+    color: #dbdadb;
+    font: 11px 'fl';
+}
+
+section#cookie .container {
+    text-align: justify;
+    padding: 30px 40px 0 40px;
+}
+
+section#cookie div#button {
+    clear: both;
+    width: 100%;
+    text-align: right;
+    margin-top: 40px;
+}
+
+section#cookie div#button a {
+    display: inline-block;
+    padding: 15px 40px;
+    font: 11px 'fb';
+    color: black;
+    background: white;
+    margin-left: 5px;
+}
+
+div#description {
+    background: red;
+    width: 100%;
+    height: 95px;
+}
+
+#description .container {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+#description div#wooman {
+    margin-top: -198px;
+    width: 330px;
+    float: left;
+}
+
+#description div#wooman img {
+    border: 0px;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#description #title {
+    float: left;
+    margin-top: -120px;
+    margin-left: 0px;
+}
+
+#description #title h1 {
+    color: black;
+    font: 48px 'fl';
+}
+
+#description #title h2 {
+    color: #80b83f;
+    font: 48px 'fb';
+    margin-top: -10px;
+}
+
+#description #title2 {
+    color: white;
+}
+
+#description #title2 h1 {
+    font: 29px 'fb';
+    float: left;
+    text-align: right;
+    line-height: 27px;
+    padding: 20px 10px 0 0;
+    margin-left: -80px;
+}
+
+#description #title2 h2 {
+    font: 72px 'fb';
+    float: left;
+    padding-top: 5px;
+}
+
+@media (max-width: 900px) {
+    .content {
+        width: 320px;
+    }
+
+
+    section#cookie div#button {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    section#cookie div#button a {
+        padding: 15px 10px;
+        margin-left: 1px;
+    }
+
+
+    section#cookie .container {
+        text-align: justify;
+        padding: 20px 20px 0 20px;
+    }
+
+    header #logo {
+        width: 320px;
+        height: 72px;
+        background: url('../images/logo.jpg') no-repeat center center;
+        margin: 0;
+        background-size: 90% auto !important;
+    }
+
+    header .content {
+        background-size: 100% auto;
+        background-position: top center;
+    }
+
+    header .content {
+        height: 220px;
+    }
+
+    header {
+        height: 220px;
+    }
+
+    div#description {
+        height: 40px;
+    }
+
+    #description div#wooman {
+        width: 150px;
+        margin-top: -98px;
+    }
+
+    header #form {
+        width: 280px;
+        float: none;
+        position: absolute;
+        margin-top: 345px;
+    }
+
+    /** nagroda **/
+    section#info #prize {
+        display: none;
+    }
+
+    section#info p {
+        width: 100%;
+    }
+
+    section#info .container {
+        font: 14px 'fl';
+        padding: 30px 0;
+    }
+
+    section#info .container strong {
+        font-family: 'fb';
+    }
+
+    section#info p small {
+        font-size: 12px;
+        font-family: 'fl';
+        padding-top: 10px;
+    }
+
+    /** title 1 */
+    #description #title {
+        margin-top: -50px;
+        margin-left: 10px;
+    }
+
+    #description #title h1 {
+        font: 20px 'fl';
+    }
+
+    #description #title h2 {
+        font: 20px 'fb';
+        margin-top: -10px;
+    }
+
+    /** title 2 */
+    #description #title2 h1 {
+        font: 12px 'fb';
+        float: left;
+        text-align: right;
+        line-height: 14px;
+        padding: 7px 10px 0 0;
+        margin-left: -20px;
+    }
+
+    #description #title2 h2 {
+        font: 30px 'fb';
+        float: left;
+        padding-top: 2px;
+    }
+
+    section#cookie {
+        margin-top: 390px;
+    }
+
+    header #form .rulez div.hcontent {
+        width: 276px;
+    }
+}
