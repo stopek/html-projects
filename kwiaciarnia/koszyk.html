@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Koszyk</title>
+    <meta content="" name="Description"/>
+    <meta content="" name="Keywords"/>
+    <meta content="" name="Author"/>
+    <meta content="index, follow" name="Robots"/>
+    <meta content="index, follow" name="Googlebot"/>
+    <link href="icon.ico" rel="Shortcut icon"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/script.cookie.js"></script>
+    <script src="scripts/script.menu.js"></script>
+    <script src="scripts/jquery.screwdefaultbuttonsV2.js"></script>
+    <script src="scripts/script.button.js"></script>
+
+</head>
+<body>
+<div class="page" id="page">
+    <!-- //start blok cookie -->
+    <div id="cookie-box">
+        <p>
+            <strong>Strona wykorzystuje pliki cookies.</strong>
+            <span>
+                    W ramach naszego sklepu interntowego stosujemy pliki cookies w celu świadczenia Państwu usług na najwyższym poziomie, 
+                    w tym w sposób dostosowany do indywidualnych potrzeb. Korzystanie z witryny bez zmiany ustawień dotyczących cookies oznacza, 
+                    że będą one zamieszczane w Państwa urządzeniu końcowym. Możecie Państwo dokonać w każdym czasie zmiany ustawień dotyczących cookies. 
+                    Więcej szczegółów w naszej "Polityce Cookies"
+                    </span>
+        </p>
+        <a class="corners" href="#">AKCEPTUJE <br/> I ZAMKNIJ</a>
+    </div>
+    <!-- //end blok coookie -->
+
+    <div class="top-pattern-white"></div>
+    <div class="content">
+
+        <!-- //start glowny top strony (logo + menu) -->
+        <header>
+            <div id="flower-logo-div">
+                <a href="#">
+                    <img alt="" src="images/flower-logo.jpg"/>
+                </a>
+            </div>
+            <div id="form">
+                <ul>
+                    <li class="flower-menu torwd">
+                        <ol class="corners">
+                            <li><a href="#"></a></li>
+                        </ol>
+                    </li>
+                    <li class="search-box torwd">
+                        <ol class="corners">
+                            <li>
+                                <form action="" method="post">
+                                    <input name="" placeholder="WPISZ TEKST" type="text" value=""/>
+                                    <input class="corners" name="" type="submit" value="SZUKAJ"/>
+                                </form>
+                            </li>
+                        </ol>
+
+                        <ol class="see-also-more corners">
+                            <li>TEL.: + 48 600 000 000</li>
+                        </ol>
+                    </li>
+                    <li class="see-also torwd">
+                        <ol class="corners">
+                            <li><a class="see-also-url corners" href="#">Zobacz także,
+                                <span>pracowniadekokracji.pl</span></a></li>
+                        </ol>
+                        <ol class="see-also-more corners">
+                            <li><a href="#">Kontakt</a></li>
+                        </ol>
+                    </li>
+                    <li class="shop-card torwd">
+
+                        <ol id="shop-icon">
+                            <li><a href="#">Twój koszyk</a></li>
+                        </ol>
+                        <ol class="shop-data corners">
+                            <li><span>Sztuk:</span> <strong>10</strong></li>
+                            <li><span>Razem:</span> <strong>128 zł</strong></li>
+                        </ol>
+                        <ol class="see-also-more corners">
+                            <li><a href="#">zobacz</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- //end glowny top strony (logo + menu)  -->
+
+        <!-- //start menu jquery -->
+        <nav id="jq-menu">
+            <nav>
+                <ul>
+                    <li><a class="strong" href="#">KWIATY DNIA</a></li>
+                    <li class="image corners shadows">
+                        <a href="#">
+                            <img alt="" src="images/flower3.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a class="strong" href="#">OKAZJE</a></li>
+                    <li><a href="#">URODZINY</a></li>
+                    <li><a href="#">IMIENINY</a></li>
+                    <li><a href="#">DZIEŃ KOBIET</a></li>
+                    <li><a href="#">DZIEŃ MATKI</a></li>
+                    <li><a href="#">ŚLUB</a></li>
+                    <li><a href="#">POGRZEB</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">DLA NIEJ</a></li>
+                    <li><a href="#">DLA NIEGO</a></li>
+                    <li><a href="#">INNE OKAZJE</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a class="strong" href="#">DODATKI PREZENTOWE</a></li>
+                    <li><a class="strong" href="#">DO BUKIETÓW</a></li>
+                    <li><a href="#">WSTĄŻKI</a></li>
+                    <li><a href="#">CZEKOLADKI</a></li>
+                </ul>
+            </nav>
+        </nav>
+        <!-- //end menu jquery -->
+
+        <!-- //start koszyk -->
+        <section id="card">
+            <nav class="home-menu corners-top">
+                <div class="top-pattern-red"></div>
+                <ul>
+                    <li><a href="#">Strona Główna</a></li>
+                    <li class="space">|</li>
+                    <li><a href="#">Koszyk</a></li>
+                </ul>
+                <h2>dodatki prezentowe do bukietów</h2>
+            </nav>
+            <div class="shadow-pattern"></div>
+
+            <!-- //start tabela z produktami w koszyku -->
+            <div id="card-box">
+                <table>
+                    <thead>
+                    <tr>
+                        <th><span>produkt</span></th>
+                        <th><span>nazwa</span></th>
+                        <th><span>cena</span></th>
+                        <th><span>ilość</span></th>
+                        <th><span>razem</span></th>
+                        <th><span>usuń</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="break">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr class="with-box-additional">
+                        <td>
+                            <div class="card-box-image corners shadows">
+                                <a href="#"><img alt="" src="images/flower6.jpg"/></a>
+                            </div>
+                        </td>
+                        <td>
+                            <h2>Bukiet wiosenny </h2>
+                            <h3>Lorem ipsum is dolor</h3>
+                            <a class="card-box-additional corners pink" href="#">dodaj dodatek prezentowy</a>
+                        </td>
+                        <td class="card-box-price"><span>149 zł</span></td>
+                        <td><span class="card-button-style corners">1 szt</span></td>
+                        <td class="card-box-price"><span>149 zł</span></td>
+                        <td><a class="card-button-style corners" href="#">usuń</a></td>
+                    </tr>
+
+                    <tr class="break">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr class="card-tree">
+                        <td>
+                            <div class="card-box-image corners shadows ">
+                                <a href="#"><img alt="" src="images/heart1.jpg"/></a>
+                            </div>
+                        </td>
+                        <td>
+                            <h2>Bukiet wiosenny </h2>
+                            <h3>Lorem ipsum is dolor</h3>
+                        </td>
+                        <td class="card-box-price"><span>149 zł</span></td>
+                        <td><span class="card-button-style corners">1 szt</span></td>
+                        <td class="card-box-price"><span>149 zł</span></td>
+                        <td><a class="card-button-style corners" href="#">usuń</a></td>
+                    </tr>
+                    <tr class="break">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr class="with-box-additional">
+                        <td>
+                            <div class="card-box-image corners shadows ">
+                                <a href="#"><img alt="" src="images/flower6.jpg"/></a>
+                            </div>
+                        </td>
+                        <td>
+                            <h2>Bukiet wiosenny </h2>
+                            <h3>Lorem ipsum is dolor</h3>
+                            <a class="card-box-additional corners black" href="#">Uwaga pole dodatkowe</a>
+                        </td>
+                        <td class="card-box-price"><span>149 zł</span></td>
+                        <td><span class="card-button-style corners">1 szt</span></td>
+                        <td class="card-box-price"><span>149 zł</span></td>
+                        <td><a class="card-button-style corners" href="#">usuń</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //end tabela z produktami w koszyku -->
+
+
+            <!-- //start formularze -->
+            <div id="card-form">
+                <form action="" method="post">
+                    <div id="card-form-details">
+                        <ul>
+                            <li>
+                                <input name="" type="checkbox" value=""/>
+                                <span>Treść na szarfie (max X znaków)</span>
+                                <input class="longer" name="" type="text" value=""/>
+                            </li>
+                            <li>
+                                <input name="" type="checkbox" value=""/>
+                                <span>Dostarczenie wiązanki na grób - 20 zł</span>
+                            </li>
+                            <li>
+                                <input name="" type="checkbox" value=""/>
+                                <span>Potwierdzenie dostarczenia wysłane na e-mail lub sms - 0 zł.</span>
+                            </li>
+                            <li>
+                                <input name="" type="checkbox" value=""/>
+                                <span>Numer telefonu lub adres e-mail</span>
+                                <input class="longer" name="" type="text" value=""/>
+                            </li>
+                        </ul>
+                        <div id="card-form-opt-box">
+                            <ol>
+                                <li><a class="pink corners" href="#">aktualizuj koszyk</a></li>
+                                <li><a class="black corners" href="#">opróźnij koszyk</a></li>
+                                <li>
+                                    <span>wartość koszyka</span>
+                                    <h3>443 zł</h3>
+                                </li>
+                            </ol>
+                        </div>
+                        <div id="card-form-2">
+                            <ul>
+                                <li class="card-form-title"><span>Forma dostawy:</span></li>
+
+                                <li>
+                                    <input name="checkboxName1" type="radio" value=""/>
+                                    <span>odbiór osobisty w kwiaciarni przy ulicy XYZ - 0 zł</span>
+                                </li>
+                                <li>
+                                    <input name="checkboxName1" type="radio" value=""/>
+                                    <span>dostawa na terenie Torunia i okolicy X km - 10 zł</span>
+                                </li>
+
+                                <li class="card-form-title"><span>Forma płatności:</span></li>
+                                <li>
+                                    <input name="checkboxName2" type="radio" value=""/>
+                                    <span>płatność przy odbiorze</span>
+                                </li>
+                                <li>
+                                    <input name="checkboxName2" type="radio" value=""/>
+                                    <span>płatność online - przelew internetowy - payU</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="corners" id="card-form-price-box">
+                        <ul>
+                            <li>
+                                <span>RAZEM DO ZAPŁATY</span>
+                                <h3>443 zł</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="" id="card-form-data">
+                        <div class="card-form-left lr-form">
+                            <ul>
+                                <li class="card-form-title">
+                                    <strong>Dane zamawiającego</strong>
+                                </li>
+                                <li>
+                                    <span>imię i nazwisko:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>e-mail:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>telefon:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li class="do-vat">
+                                    <input checked name="" type="checkbox" value=""/>
+                                    <strong>Czy wystawić fakturę?</strong>
+                                </li>
+                            </ul>
+                            <ul id="card-form-vat">
+                                <li>
+                                    <span>imię i nazwisko / nazwa firmy:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>adres:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>kod pocztowy:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>miasto:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>NIP / PESEL:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-form-right  lr-form">
+                            <ul>
+                                <li class="card-form-title">
+                                    <strong>Adres dostawy</strong>
+                                </li>
+                                <li>
+                                    <span>imię i nazwisko:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>adres:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>kod pocztowy:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+                                <li>
+                                    <span>miasto:</span>
+                                    <input name="" type="text" value=""/>
+                                </li>
+
+                                <li>
+                                    <span>uwagi:</span>
+                                    <textarea name=""></textarea>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="card-form-bottom">
+                            <ul>
+                                <li>
+                                    <input checked name="" type="checkbox" value=""/>
+                                    <span> Akceptuję <a href="#">regulamin</a> sklepu internetowego (kliknij by przeczytać)</span>
+                                </li>
+                                <li>
+                                    <input checked name="" type="checkbox" value=""/>
+                                    <span>Wyrażam zgodę na przetwarzanie danych osobowych</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <input class="corners" name="" type="submit" value="Prześlij zamówienia do realizacji"/>
+                    </div>
+                </form>
+            </div>
+            <!-- //end formularze -->
+        </section>
+        <!-- //end koszyk -->
+
+        <div class="hrline"></div>
+
+        <!-- //start footer z menu -->
+        <footer id="under-menu">
+            <nav>
+                <ul>
+                    <li><a class="strong" href="#">konakt</a></li>
+                    <li><a href="#">o kwiaciarni</a></li>
+                    <li><a href="#">regulamin</a></li>
+                    <li><a href="#">pomoc</a></li>
+                    <li><a href="#">dostawa i płatności</a></li>
+                    <li><a href="#">polityka</a></li>
+                    <li><a href="#">prywatności i cookies</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a class="strong" href="#">OKAZJE</a></li>
+                    <li><a href="#">URODZINY</a></li>
+                    <li><a href="#">IMIENINY</a></li>
+                    <li><a href="#">DZIEŃ KOBIET</a></li>
+                    <li><a href="#">DZIEŃ MATKI</a></li>
+                    <li><a href="#">ŚLUB</a></li>
+                    <li><a href="#">POGRZEB</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">DLA NIEJ</a></li>
+                    <li><a href="#">DLA NIEGO</a></li>
+                    <li><a href="#">INNE OKAZJE</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a class="strong" href="#">DODATKI PREZENTOWE</a></li>
+                    <li><a class="strong" href="#">DO BUKIETÓW</a></li>
+                    <li><a href="#">WSTĄŻKI</a></li>
+                    <li><a href="#">CZEKOLADKI</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a class="sponsor-1" href="#"></a></li>
+                    <li><a class="pay-u" href="#"></a></li>
+                    <li><a class="see-also-footer" href="#"></a></li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- //end footer z menu  -->
+    </div>
+    <div class="bottom-pattern-white"></div>
+
+    <!-- //start stopka z copyright -->
+    <footer id="foo-ter">
+        <a href="#" id="facebook-logo"></a>
+        <span>© Copyright Pracownia Dekoracji 2014 Realizacja: digate.pl</span>
+    </footer>
+    <!-- //end stopka z copyright -->
+</div>
+</body>
+</html>
