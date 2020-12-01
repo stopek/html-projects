@@ -1,0 +1,383 @@
+/* Reset CSS
+   ------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, input, textarea, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@font-face {
+    font-family: "kozuka";
+    src: url("trajan.otf");
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background: #e2dcdc;
+}
+
+#site {
+    width: 100%;
+    height: auto;
+    display: table;
+}
+
+#page {
+
+}
+
+#top {
+    width: 100%;
+    height: 131px;
+    display: block;
+    background: url('images/topPatt.gif') repeat-x;
+    background-position: top 12px;
+}
+
+#top div {
+    width: 1202px;
+    height: 131px;
+    background: url('images/top.png');
+    display: block;
+    margin: auto;
+}
+
+#top #menu {
+
+}
+
+#top #menu ul {
+    float: right;
+}
+
+#top #menu ul li {
+    width: 72px;
+    height: 112px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+
+#top #menu ul li.home {
+    background: url('images/homeIcon.png');
+}
+
+#top #menu ul li.investments {
+    background: url('images/investmentsIcon.png');
+}
+
+#top #menu ul li.work {
+    background: url('images/workIcon.png');
+}
+
+#top #menu ul li.contact {
+    background: url('images/contactIcon.png');
+}
+
+#top #menu ul li.ourwork {
+    background: url('images/ourworkIcon.png');
+}
+
+#top #menu ul li.aboutus {
+    background: url('images/aboutusIcon.png');
+}
+
+#top #menu ul li.cooperation {
+    background: url('images/cooperationIcon.png');
+}
+
+#top #menu ul li.admin {
+    background: url('images/adminIcon.png');
+}
+
+.a1 {
+    position: relative;
+    top: -40px;
+    display: inline-block;
+}
+
+#top #menu ul li a {
+    position: absolute;
+    width: 72px;
+    height: 112px;
+}
+
+
+#projects {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
+    background: #bfbfbf;
+}
+
+#projects #projects-box {
+    display: table;
+    width: 1200px;
+    height: 155px;
+    margin: auto;
+}
+
+#projects #projects-box dl.slidedeck dd {
+    padding: 7px;
+    font-family: tahoma;
+    font-size: 12px;
+    display: table;
+}
+
+#projects #projects-box dl.slidedeck dd img {
+    float: left;
+}
+
+#projects #projects-box dl.slidedeck dd h2 {
+    float: right;
+    padding: 5px;
+    margin: 0 5px;
+    background: #d3d3d3;
+    display: inline;
+    font: 14px "kozuka";
+}
+
+#projects #projects-box dl.slidedeck dd em {
+    width: 490px;
+    clear: both;
+    top: 40px;
+    color: #646464;
+    position: absolute;
+    margin: 5px;
+    font: 12px "kozuka";
+    text-align: justify;
+    line-height: 23px
+}
+
+#projects #projects-box dl.slidedeck dd em a.sprawdzNas {
+    width: 120px;
+    height: 24px;
+    background: url('images/sprawdzNasButton.png') no-repeat;
+    position: absolute;
+    float: left;
+    margin: 1px 0 0 10px;
+}
+
+#ourProjects {
+    width: 100%;
+    height: 302px;
+    margin: 20px 0 20px 0;
+    clear: both;
+}
+
+#ourProjects div {
+    display: table;
+    margin: auto;
+    width: 1241px;
+}
+
+#ourProjects div div#sl {
+    width: 880px;
+    height: 282px;
+    padding: 10px;
+    display: block;
+    float: left;
+    background: #bfbfbf;
+}
+
+#ourProjects div div#contact {
+    display: block;
+    float: left;
+    height: 280px;
+    background: url('images/contactBG.gif');
+    width: 320px;
+    text-align: center;
+    padding: 22px 21px 0 0;
+}
+
+#ourProjects div div#contact span {
+    text-align: center;
+
+
+    line-height: 45px;
+}
+
+#ourProjects div div#contact h1 {
+    font-family: "kozuka";
+    color: #292929;
+    font-size: 27px;
+    text-shadow: 1px 1px 1px #e1d23c;
+}
+
+#ourProjects div div#contact h2 {
+    font-family: "kozuka";
+    color: #505050;
+    font-size: 17px;
+}
+
+#footer {
+    width: 100%;
+    height: 206px;
+    background: #1f1e1c;
+    border-top: 2px solid #e1d23c;
+    clear: both;
+}
+
+#footer div#foo-block {
+    width: 1245px;
+    background: url('images/foo_menu_bg.gif');
+    height: 206px;
+    margin: auto;
+}
+
+#footer div#foo-block div#f_aboutUs {
+    background: url('images/f_aboutUs.gif') left no-repeat;
+    float: left;
+    width: 700px;
+    height: 206px;
+    display: block;
+}
+
+#footer div#foo-block div#f_aboutUs div {
+    background: #191817;
+    width: 660px;
+    height: 162px;
+    padding: 10px;
+    margin: 12px auto 0 60px;
+    display: block;
+    text-align: justify;
+}
+
+#footer div#foo-block div#f_aboutUs div span {
+    color: #e2dcdc;
+    font-family: "kozuka";
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#footer div#foo-block div#f_aboutUs div span a.readMore {
+    width: 81px;
+    height: 21px;
+    background: url('images/czytajDalejButton.gif') no-repeat;
+    position: absolute;
+    float: left;
+    margin: 3px 0 0 10px;
+}
+
+#footer div#foo-block div#f_coo {
+    float: right;
+    background: url('images/f_coo.gif') right no-repeat;
+    width: 545px;
+    height: 206px;
+    display: block;
+}
+
+#footer div#foo-block div#f_coo div {
+    width: 427px;
+    height: 162px;
+    background: url('images/coo_box.gif');
+    margin: auto;
+    margin-top: 12px;
+    display: block;
+    text-align: center;
+    padding-top: 20px
+}
+
+#foo_m {
+    width: 1245px;
+    height: 40px;
+    background: url('images/foo_menu_bg.gif');
+    margin: auto;
+    display: block;
+    clear: both;
+    margin: 15px auto;
+}
+
+#foo_m span#foo_author {
+    float: right;
+    margin-right: 20px;
+    padding-top: 15px;
+    color: white;
+    font-family: kozuka;
+    font-size: 10px;
+}
+
+#foo_m span#foo_author a {
+    color: #d0db0e;
+    padding: 3px 5px;
+}
+
+#foo_m span#foo_author a:hover {
+    background: #212121;
+}
+
+#foo_m ul#foo_menu {
+
+}
+
+#foo_m ul#foo_menu li {
+    float: left;
+    height: 40px;
+    text-align: center;
+    width: 100px;
+
+}
+
+#foo_m ul#foo_menu li a {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    font-family: kozuka;
+    font-size: 10px;
+    color: #676767;
+    line-height: 40px;
+}
+
+#foo_m ul#foo_menu li a:hover {
+    color: #000000;
+    background: url('images/foo_menu_hover.gif') repeat-x;
+}
+
+
+div#opacity {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 300%;
+    background: url('images/opacity.png');
+    z-index: 99999;
+}
+
+
+.corners,
+#footer div#foo-block div#f_aboutUs div,
+#foo_m span#foo_author a {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}				
