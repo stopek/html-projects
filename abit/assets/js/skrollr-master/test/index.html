@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="no-skrollr">
+<head>
+    <meta charset="utf-8"/>
+
+    <title>skrollr test suite</title>
+
+    <link href="qunit.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        #qunit {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            overflow: auto;
+            z-index: 101;
+        }
+
+        #anchor-1, #anchor-2 {
+            height: 1000px;
+            background: #ccc;
+            position: absolute;
+            top: 0;
+        }
+
+        #foreign-anchor {
+            margin: 100px;
+            padding: 100px;
+            background: #ff0;
+            position: fixed;
+        }
+
+        #relative-percentage-offset {
+            top: 100%;
+        }
+
+        #float {
+            position: static !important;
+        }
+
+        div {
+            position: absolute;
+        }
+    </style>
+
+    <script src="../src/skrollr.js" type="text/javascript"></script>
+</head>
+<body class="notransition">
+<div data-end="font-size:90px;" data-start="font-size:10px;" id="end">TEST</div>
+<div data-_myconst--300="  	left:-100px; top:0px	" data-_myconst-200-start="  top:50px; 		 left:100px; "
+     id="simple-numeric">TEST
+</div>
+<div data-_my500="margin:30px 20px 10px 0px;" data-_my500--500="margin:0px 10px 20px 30px;" id="compound-numeric">TEST
+</div>
+<div data-0="color:rgb(0,0,0);" data-500="color:rgb(50,100,150);" id="rgb-color">TEST</div>
+<div data-0="color:rgba(0,0,0,.2);" data-500="color:rgba(50,100,150,.5);" id="rgba-color">TEST</div>
+<div data-0="color:hsl(0,0%,0%);" data-500="color:hsl(3600,50%,50%);" id="hsl-color">TEST</div>
+<div data-0="color:hsla(0,0%,0%,.0);" data-500="color:hsla(3600,50%,50%,.5);" id="hsla-color">TEST</div>
+<div data-0="right:!0px;" data-499="right:!100px;" id="no-interpolation">TEST</div>
+<div data-top="right:0px;" data-top-bottom="right:100px;" id="anchor-1">TEST</div>
+<div data-top="right:0px;" data-top-center="right:200px;" id="anchor-2">TEST</div>
+<div data-anchor-target="#anchor-2" data-top="padding:200px;" data-top-center="padding:100px;"
+     id="foreign-anchor"></div>
+<div data-499="float:left;" data-start="float:none;" id="float" style="background:red;">TEST</div>
+
+<svg height="200px" version="1.1" width="200px">
+    <rect
+            data-top="margin:100px;" data-top-bottom="margin:200px;" height="200"
+            id="svg-relative-mode"
+            style="fill:#0000ff;fill-rule:evenodd;stroke:none" width="200"/>
+</svg>
+
+<div data-250="background-image:!none;" data-499='background-image:!url("https://secure.travis-ci.org/Prinzhorn/skrollr.png");'
+     id="colon-url">TEST
+</div>
+<div data-250="background-image:!none;" data-499='background-image:!url("https://secure.travis-ci.org/Prinzhorn/skrollr.png?1337");'
+     id="period-number">TEST
+</div>
+
+<div data-0="left[half1]:0px;" data-500="left[half1]:50px;" id="easing">TEST</div>
+<div data-0="left[half1]:0px;" data-500="left[half1]:50px;" data-edge-strategy="ease" id="easing_with_easing_strategy">
+    TEST
+</div>
+
+<div data-0="left:0px;" data-500="left:50px;" data-edge-strategy="reset" id="reset-strategy" style="left:1337px;">TEST
+</div>
+
+<div data-0="left:0px;" data-200p="left:500px;" id="percentage-offset">TEST</div>
+
+<div data--100p-bottom-top="left:500px;" data-0="left:0px;" id="relative-percentage-offset">TEST</div>
+
+<div data-0="z-index:!1;" data-250="z-index:auto;" id="auto-z-index">TEST</div>
+
+<div data-0="@title:500;@data-test:skrollr" data-250="@title:250" data-500="@title:0;@data-test:skrollr-test" id="attr">
+    TEST
+</div>
+
+<div id="qunit"></div>
+
+<script src="qunit.js" type="text/javascript"></script>
+<script src="qunit-numeric-css-property-equals.js" type="text/javascript"></script>
+<script src="jquery.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../src/plugins/skrollr.ie.js"></script>
+<![endif]-->
+<script src="tests.js" type="text/javascript"></script>
+</body>
+</html>
