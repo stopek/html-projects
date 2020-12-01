@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pl" xml:lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta content="text/html; charset=iso-8859-2" http-equiv="content-type"/>
+    <meta content="" name="Description"/>
+    <meta content="" name="Keywords"/>
+    <meta content="Pawel Stopczynski" name="Author"/>
+    <meta content="index, follow" name="Robots"/>
+    <meta content="index, follow" name="Googlebot"/>
+    <link href="styles.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="index.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery_go.js" type="text/javascript"></script>
+
+
+    <link href="css/jquery.tabs.css" media="print, projection, screen" rel="stylesheet" type="text/css"/>
+    <!-- Additional IE/Win specific style sheet (Conditional Comments) -->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/jquery.tabs-ie.css" type="text/css" media="projection, screen"/>
+    <![endif]-->
+
+    <script src="js/tabs/jquery-1.1.3.1.pack.js" type="text/javascript"></script>
+    <script src="js/tabs/jquery.history_remote.pack.js" type="text/javascript"></script>
+    <script src="js/tabs/jquery.tabs.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+        $j(function () {
+            $j('.jquery_menu').tabs({fxSlide: true, fxFade: true, fxSpeed: 'normal'});
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+<div id="page">
+    <div id="top" onclick="document.location.href='http://www.pesarena.pl/PortFolio';"
+         style="cursor:hand;cursor:pointer;"></div>
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projekty</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Newsy</a></li>
+    </ul>
+    <ul class="block">
+        <li class="header"><img alt="" src="img/kropy.png"/><span>.Co nowego</span></li>
+        <li class="srodek">
+
+            <!-- news pierwszy -->
+            <ul class="news">
+                <li class="news_logo"><img alt="" src="img/news_example_1.jpg"/></li>
+                <li class="news_tresc">
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                </li>
+                <li class="news_buttons">
+                    <ul>
+                        <li><a href="#"><img alt="" src="img/news_button_1.gif"/></a></li>
+                        <li><a href="#"><img alt="" src="img/news_button_2.gif"/></a></li>
+                        <li><a href="#"><img alt="" src="img/news_button_3.gif"/></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- news drugi -->
+            <ul class="news">
+                <li class="news_logo"><img alt="" src="img/news_example_1.jpg"/></li>
+                <li class="news_tresc">
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                    Lorem itpus dolori elemi Lorem itpus dolori elemi Lorem itpus dolori elemi
+                </li>
+                <li class="news_buttons">
+                    <ul>
+                        <li><a href="#"><img alt="" src="img/news_button_1.gif"/></a></li>
+                        <li><a href="#"><img alt="" src="img/news_button_2.gif"/></a></li>
+                        <li><a href="#"><img alt="" src="img/news_button_3.gif"/></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="pager_des">
+            <ul>
+                <li style="width: 130px;">kategoria:</li>
+                <li style="width: 460px;">stronnicowanie:</li>
+                <li style="width: 127px;">sortowanie</li>
+            </ul>
+        </li>
+
+
+        <li class="pager">
+            <ul>
+                <li class="pager_dzial">
+                    <form action="" method="post">
+                        <div><select name="">
+                            <option value="">Sport</option>
+                        </select></div>
+                    </form>
+                </li>
+                <li class="pager_stronnicowanie">
+                    <ul>
+                        <li><a href="#"><img alt="" src="img/back.gif"/></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li>-</li>
+                        <li><a href="#">12</a></li>
+                        <li><a href="#">13</a></li>
+                        <li><a href="#">14</a></li>
+                        <li><a href="#">15</a></li>
+                        <li><a href="#"><img alt="" src="img/next.gif"/></a></li>
+                    </ul>
+                </li>
+                <li class="pager_sortowanie">
+                    <form action="" method="post">
+                        <div><select name="">
+                            <option>A-Z</option>
+                        </select></div>
+                    </form>
+                </li>
+            </ul>
+        </li>
+
+
+        <!-- blok RSS -->
+        <li class="rss">
+            <div class="jquery_menu">
+                <ul class="yyy">
+                    <li><a href="#area-1"><span>wp.pl</span></a></li>
+                    <li><a href="#area-2"><span>onet.pl</span></a></li>
+                    <li><a href="#area-3"><span>interia.pl</span></a></li>
+                    <li><a href="#area-4"><span>sport.pl</span></a></li>
+                </ul>
+                <div class="srodek_zakladki" id="area-1">
+							<span>
+								<img alt="" src="img/rss_logo.gif"/>
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+							</span>
+                </div>
+                <div class="srodek_zakladki" id="area-2">
+							<span>
+								<img alt="" src="img/rss_logo.gif"/>
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+							</span>
+                </div>
+                <div class="srodek_zakladki" id="area-3">
+							<span>
+								<img alt="" src="img/rss_logo.gif"/>
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+							</span>
+                </div>
+                <div class="srodek_zakladki" id="area-4">
+							<span>
+								<img alt="" src="img/rss_logo.gif"/>
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+								Lorem itpus dolori elemi Lorem itpus dolori elemi  	 Lorem itpus dolori elemi  								
+							</span>
+                </div>
+            </div>
+        </li>
+
+
+        <li id="subscribe">
+            <form action="" method="post">
+                <div class="subscribe_text"><input name="sub_mail" type="text" value="twoj adres mail"/></div>
+                <div class="subscribe_submit"><input src="img/ok.png" type="image"/></div>
+            </form>
+            <div class="subscribe_description"><span>Chcesz otrzymywać informacje o nowosciach na naszej stronie?</span>
+            </div>
+        </li>
+
+
+        <li class="foo"></li>
+    </ul>
+    <ul class="block">
+        <li class="header"><img alt="" src="img/kropy.png"/><span>.Projekty</span></li>
+        <li class="srodek">
+            <ul class="project_box">
+                <li class="project_name_site"><span>www.example-name.pl</span></li>
+                <li class="project_prev_page"><a href="#"><img alt="" src="img/project_prev.gif" style="float:left;"/>poprzednia</a>
+                </li>
+                <li class="project_site_number"><a href="#">2/30</a></li>
+                <li class="project_next_page"><a href="#"><img alt="" src="img/project_next.gif" style="float:right;"/>nastepna</a>
+                </li>
+                <li class="project_screen"><img alt="" src="img/screen.jpg"/></li>
+                <li class="project_description">
+                    <ul>
+                        <li>
+                            <strong>Uzyte technologie: </strong> Photoshop, Notepadd++, PHP, JavaScript, HTML
+                            (+standardy W3C), CSS <br/>
+                            <strong>Uzyte skrypty: </strong> stMenu, akModal, jqueryTabs <br/>
+                        </li>
+                        <li><strong>Data Wykonania: </strong> 10 maja 2010r. <br/> <strong>Projekt ID</strong>: #0021
+                        </li>
+                        <li class="description"><strong>Opis projektu: </strong>
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo
+                            Lorem itpus dolori elemi bledenuo [...]
+                            Lorem itpus <strong><a href="#">Czytaj więcej</a></strong>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
+        <li class="foo"></li>
+    </ul>
+    <div id="bottom">
+        <div id="block_bottom_left">
+            <ul>
+                <li class="kontakt_header"><img alt="" src="img/kropy.png"/><span>.Kontakt</span></li>
+                <li>
+                    <ul class="menu2">
+                        <li><a href="mailto:stopek.pawel@gmail.com" title="stopek.pawel@gmail.com"><img
+                                alt="" src="img/mail.jpg"/></a></li>
+                        <li><a href="gg:9855119" title="9855119"><img alt="" src="img/gg.jpg"/></a></li>
+                        <li><a href="skype:stopek_pl" title="stopek_pl"><img alt="" src="img/skype.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li class="foo"></li>
+            </ul>
+            <ul>
+                <li class="kontakt_header"><span>.Udostępnij</span></li>
+                <li>
+                    <ul class="share">
+                        <li><a href="#"><img alt="" src="img/share_nk.jpg"/></a></li>
+                        <li><a href="#"><img alt="" src="img/share_fb.jpg"/></a></li>
+                    </ul>
+                </li>
+                <li class="foo"></li>
+            </ul>
+
+        </div>
+        <div id="block_bottom_right">
+            <ul>
+                <li class="logowanie_header"><span>.Logowanie</span></li>
+                <li>
+                    <form action="" method="post">
+                        <div>
+                            <input name="" type="text" value="login"/>
+                            <input name="" title="zapamietaj!" type="checkbox" value="1"/>
+                            <input name="" type="password" value="haslo"/>
+                            <input name="" type="submit" value=""/>
+                        </div>
+                    </form>
+                    <ul class="option">
+                        <li><img alt="" src="img/ikona_1.png"/><span><a href="#">Zarejestruj</a></span></li>
+                        <li><img alt="" src="img/ikona_2.png"/><span><a href="#">Zapomnialem Hasla</a></span></li>
+                    </ul>
+
+                </li>
+                <li class="foo"></li>
+            </ul>
+            <ul>
+                <li class="logowanie_header"><span>.Statystyki</span></li>
+                <li class="stat">
+                    <ul style="height:102px;">
+                        <li><strong>Online/zalogowanych: </strong> 14/8 <small>(<a href="#">Zbyszek</a>, <a href="#">Heniek</a>,
+                            <a href="#">Stopek</a>, [...])</small></li>
+                        <li><strong>Łącznie odwiedzin: </strong> 21 023 <small>(ostatnio z: Rypin, Brodnica,
+                            Torun)</small></li>
+                        <li><strong>Zarejestrowanych: </strong> 98 <small>(ostatni: <a href="#">wieslaw23</a>)</small>
+                        </li>
+                        <li><strong>Projektów/na sprzedaż: </strong> 30/10 <small>(ostatni: <a href="#">projekt
+                            auto-moto</a>)</small></li>
+                        <li><strong>Newsów w bazie: </strong> 14 <small>(ostatni: <a href="#">IE9 juz jest!</a>)</small>
+                        </li>
+                        <li><strong>Dostępne kanały RSS: </strong> 4 <small>(wp,interia,onet,sport)</small></li>
+                        <li><strong>Komentarzy: </strong> 121 <small>(ostatni do: <a href="#">IE9 juz jest</a>, autor:
+                            <a href="#">piotrek13</a>)</small></li>
+                    </ul>
+
+                </li>
+                <li class="foo"></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">www.bq-project.pl (c) Copyright Stopek, 2010, All rights reserved!</div>
+</div>
+</body>
+</html>
