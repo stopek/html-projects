@@ -1,0 +1,657 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300&subset=latin,latin-ext);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+*:focus {
+    outline: 0;
+}
+
+
+h1.header {
+    font: 31px 'Roboto';
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #5d5d5d;
+    letter-spacing: -1px;
+    margin: 0px;
+}
+
+
+div#page {
+    padding: 0;
+    margin: 0;
+    width: 1200px;
+    display: table;
+    margin: auto;
+}
+
+div#page div#content {
+    width: 1124px;
+    display: table;
+    margin: auto;
+}
+
+div#page #top {
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+div#page #top #logos {
+    display: table;
+    width: 1165px;
+    margin: auto;
+}
+
+div#page #top #logos ul {
+    margin: 0px;
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+
+div#page #top #logos ul li {
+    float: right;
+    padding-top: 20px;
+}
+
+div#page #top #logos ul li img {
+    max-width: 190px;
+}
+
+div#page #top #logos ul li.left {
+    float: left;
+}
+
+div#page #top #menu {
+    margin: 30px 0;
+    background: #3e3e3e;
+    font: 28px 'Roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+div#page #top #menu ul {
+    display: table;
+
+    width: 1200px;
+    margin: 0px;
+    padding: 0;
+}
+
+div#page #top #menu li {
+    float: left;
+    width: 33%;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    box-shadow: inset 0 0 0 0 #0088cf;
+}
+
+div#page #top #menu li:first-child {
+    width: 34%;
+}
+
+div#page #top #menu li:hover {
+    box-shadow: inset 0 100px 0 0 #0088cf;
+}
+
+div#page #top #menu li a {
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* gorne szczegoly produktu */
+div#page #product {
+    display: table;
+    width: 100%;
+}
+
+div#page #product #foto {
+    float: left;
+    width: 460px;
+    background: #0088cf;
+    font: 25px 'Roboto';
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+div#page #product #foto h1 {
+    font-size: 30px;
+}
+
+div#page #product #foto h1,
+div#page #product #foto h2,
+div#page #product #foto h3 {
+    color: white;
+    margin: 0 0 0 20px;
+}
+
+div#page #product #details {
+    float: left;
+    width: 600px;
+    padding-left: 32px;
+}
+
+div#page #product #details .header {
+    border-bottom: 1px solid #cccccc;
+}
+
+div#page #product #details .details_element {
+    margin: 0px;
+}
+
+div#page #product #details .details_element > div {
+    margin-left: 20px;
+    padding: 6px 0;
+}
+
+div#page #product #details .details_element > div #details_list strong {
+    color: #0088cf;
+    font-weight: 900;
+}
+
+div#page #product #details .details_element div #details_list {
+    color: black;
+    font: 16px 'Roboto';
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* formatowanie ceny */
+div#page #product #details #price {
+    width: 90%;
+    display: table;
+}
+
+div#page #product #details #price .left {
+    float: left;
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+
+div#page #product #details #price .left h2 {
+    font: 40px 'Roboto';
+    font-weight: 900;
+    color: #0088cf;
+    margin: 0px;
+}
+
+div#page #product #details #price .left h3 {
+    font: 22px 'Roboto';
+    font-weight: 900;
+    color: #5d5d5d;
+    text-decoration: line-through;
+    margin-top: -13px;
+}
+
+div#page #product #details #price .left h2 small {
+    font-size: 29px;
+}
+
+div#page #product #details #price #icons {
+    float: right;
+}
+
+div#page #product #details #price #icons ul {
+    display: table;
+    margin-top: 20px;
+}
+
+div#page #product #details #price #icons li {
+    float: left;
+    width: 105px;
+    height: 75px;
+    background: #5c5c5c;
+    text-align: center;
+    font: 17px 'Roboto';
+    border-radius: 50%;
+    color: white;
+    font-weight: 900;
+    padding-top: 30px;
+}
+
+div#page #product #details #price #icons li:hover {
+    background: #cf0027;
+}
+
+div#page #product #details #price #icons li h5 {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+div#page #product #details #price #icons li h4 {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* tabelka z rozmiarami */
+div#page #product #details #sizes {
+    margin-left: 0;
+    font: 11px 'Roboto';
+    color: #5d5d5d;
+    text-transform: uppercase;
+}
+
+div#page #product #details #sizes table {
+    width: 100%;
+}
+
+div#page #product #details #sizes table td.size {
+    font: 15px 'Roboto';
+    font-weight: 900;
+}
+
+div#page #product #details #sizes table tr td {
+    border-right: 1px solid white;
+}
+
+div#page #product #details #sizes .inaval {
+    background: #cf0027;
+}
+
+div#page #product #details #sizes .aval {
+    background: #0088cf;
+}
+
+
+div#page #product #details #legend {
+    margin-top: 20px;
+    font: 12px 'Roboto';
+    color: #5c5c5c;
+    font-weight: 900;
+    padding: 0px;
+}
+
+div#page #product #details #legend div {
+    width: 55px;
+    height: 12px;
+    float: left;
+    margin-right: 10px;
+}
+
+/** informacje o produkcie, danych oraz platnosciach */
+div#page div#informations {
+    display: table;
+    font: 15px 'Roboto';
+    font-weight: 400;
+    text-align: justify;
+    color: #686868;
+    margin-top: 40px;
+}
+
+div#page div#informations h1.header {
+    border-bottom: 1px solid #cccccc;
+}
+
+div#page div#informations .left {
+    float: left;
+    width: 50%;
+}
+
+div#page div#informations .left ul {
+    margin: 20px 20px 20px 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+div#page div#informations .left ul li {
+    margin-top: 5px;
+    clear: both;
+    padding-top: 5px;
+}
+
+div#page div#informations .left ul li span {
+    margin-top: 5px;
+    display: block;
+    padding-top: 5px;
+}
+
+div#page div#informations strong.number {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 45px;
+    background: #0088cf;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font: 30px 'Roboto';
+    margin: 5px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+div#page div#informations li:hover strong.number {
+    background: #cf0027;
+}
+
+div#page div#informations .right {
+    float: right;
+    width: 50%;
+}
+
+div#page div#informations .right ul {
+    padding: 0px;
+}
+
+div#page div#informations .right strong {
+    font-weight: 700;
+}
+
+div#page div#informations .right ul li span {
+    margin-top: 2px;
+    display: block;
+    padding-top: 2px;
+}
+
+div#page div#informations .right ul li {
+    clear: both;
+}
+
+div#page div#informations .right strong.number {
+    font-size: 12px;
+    width: 20px;
+    height: 17px;
+    margin: 2px;
+    margin-right: 10px;
+    padding-top: 3px;
+}
+
+div#page div#informations p {
+    padding: 20px 20px;
+}
+
+/* technologie */
+div#page div#technology {
+    width: 100%;
+}
+
+div#page div#technology h1.header {
+    border-bottom: 1px solid #cccccc;
+}
+
+div#page div#technology div {
+    margin: 20px;
+}
+
+div#page div#technology div ul {
+    margin: 0;
+    padding: 0;
+}
+
+div#page div#technology div ul li {
+    font: 15px 'Roboto';
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 40px;
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+div#page div#technology div ul li img {
+    float: left;
+    margin-right: 20px;
+}
+
+div#page div#technology div ul li h2 {
+    font: 16px 'Roboto';
+    font-weight: 900;
+    color: #0088cf;
+    text-transform: uppercase;
+}
+
+/* zdjecia */
+div#page div#images {
+    display: table;
+    width: 100%;
+}
+
+div#page div#images h1.header {
+    border-bottom: 1px solid #cccccc;
+}
+
+div#page div#images ul {
+    display: table;
+    margin: auto;
+    width: 1000px;
+    padding: 0;
+}
+
+div#page div#images ul li {
+    float: left;
+    text-align: center;
+    background: white;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+div#page div#images ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+div#page div#images ul li img {
+    max-width: 100%;
+    max-height: 100%;
+
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-filter: contrast(0.9);
+    filter: contrast(0.9);
+
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+
+}
+
+div#page div#images ul li img:hover {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+
+    z-index: 2;
+    -webkit-filter: contrast(1.1);
+    filter: contrast(1.1);
+}
+
+/* stopka */
+div#page div#footer {
+    width: 100%;
+    padding: 30px 0;
+    background: #3e3e3e;
+    font: 28px 'Roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+div#page div#footer ul {
+    display: table;
+    width: 1165px;
+    margin: auto;
+    padding: 0px;
+}
+
+div#page div#footer ul li {
+    float: left;
+    width: 33%;
+}
+
+div#page div#footer ul a {
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/** copyright */
+div#page div#copyright {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    display: table;
+    margin: auto;
+    width: 1165px;
+    background: white;
+    padding: 10px 0;
+}
+
+div#page div#copyright div {
+    display: table;
+    width: 1165px;
+    font: 16px 'Roboto';
+    margin: auto;
+}
+
+
+div#page #product #foto .view {
+    width: 420px;
+    margin: 20px;
+}
+
+div#page #product #foto .view img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.view {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.view .mask, .view .content {
+    width: 420px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.view img {
+    display: block;
+    position: relative;
+}
+
+.view a.info {
+    background: url('http://salonobuwniczy.home.pl/butik/cms/images/lupa.png') center center no-repeat;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    text-indent: -9999px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.effect img {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.2s ease-in;
+}
+
+.effect .mask {
+    opacity: 0;
+    overflow: visible;
+    border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+    border-style: solid;
+    border-width: 210px;
+    width: 0;
+    height: 0;
+    transform: translateY(-125px);
+    transition: transform 0.2s 0.1s ease-out, opacity 0.3s ease-in-out;
+}
+
+.effect a.info {
+    opacity: 0;
+    transform: translateY(-125px);
+    transition: transform 0.3s ease-in, opacity 0.1s ease-in-out;
+}
+
+.effect:hover img {
+    opacity: 0.7;
+    transform: scale(2, 2);
+}
+
+.effect:hover .mask {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.effect:hover a.info {
+    opacity: 1;
+    transform: translateY(100px);
+}
